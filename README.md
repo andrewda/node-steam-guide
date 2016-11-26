@@ -4,7 +4,12 @@ A complete guide to building Steam bots using Node.js.
 
 ## Table of Contents
 
-- [Chapter 1 - Basics](./Chapter 1 - Basics/README.md)
+- [Chapter 1 - Basics](./Chapter 1 - Basics)
+	- [Chapter 1.1 - Introduction](./Chapter 1 - Basics/Chapter 1.1 - Introduction)
+	- [Chapter 1.2 - Prerequisites](./Chapter 1 - Basics/Chapter 1.2 - Prerequisites)
+	- [Chapter 1.3 - Starting to Code](./Chapter 1 - Basics/Chapter 1.3 - Starting to Code)
+	- [Chapter 1.4 - TOTP](./Chapter 1 - Basics/Chapter 1.4 - TOTP)
+	- [Chapter 1.5 - Errors](./Chapter 1 - Basics/Chapter 1.5 - Errors)
 
 *(more chapters to come)*
 

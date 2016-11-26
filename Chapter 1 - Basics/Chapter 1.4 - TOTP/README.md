@@ -1,4 +1,4 @@
-# Chapter 1.1 - Steam TOTP
+# Chapter 1.4 - Steam TOTP
 
 As you probably already know, Steam has made 2FA mandatory now. This can
 fortunately be automatized using the [`steam-totp`](https://github.com/DoctorMcKay/node-steam-totp)
@@ -62,6 +62,4 @@ market confirmations. We will use the identity secret later on when it becomes
 necessary. Remember to never share these secrets with anyone as they could
 easily sabotage your account.
 
-## Authors
-
-This chapter was written by @Fedzero and edited by @andrewda.
+[Continue Reading](../Chapter 1.5 - Errors)
