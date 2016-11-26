@@ -29,7 +29,7 @@ client.on('loggedOn', () => {
 });
 ```
 
-If done correctly, running 'node project1.js` will now automatically make the
+If done correctly, running `node project1.js` will now automatically make the
 bot login without the need of manually entering the code.
 
 Now let's go through what we added step-by-step. We added two important lines
