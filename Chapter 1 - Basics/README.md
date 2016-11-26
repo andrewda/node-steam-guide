@@ -170,3 +170,7 @@ incorrectly. Try typing `npm install steam-user` again.
 This means you have likely specified an incorrect `accountName` or `password`.
 Try re-entering them and make sure they work when logging into the Steam
 client.
+
+## Authors
+
+This chapter was written by @andrewda.
