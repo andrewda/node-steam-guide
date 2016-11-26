@@ -8,7 +8,7 @@ const logOnOptions = {
 
 client.logOn(logOnOptions);
 
-client.on('loggedOn', function() {
+client.on('loggedOn', () => {
 	console.log('Logged into Steam!');
 
 	client.setPersona(SteamUser.Steam.EPersonaState.Online);
