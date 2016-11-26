@@ -1,0 +1,43 @@
+# Chapter 1.1 - Steam TOTP
+As you probably already know, Steam has made 2FA mandatory now. This can fortunately be automatized 
+using [Doctor McKay's Steam TOTP](https://github.com/DoctorMcKay/node-steam-totp). 
+
+To install this you can simply do npm install steam-totp and you should be ready to go. 
+
+```js
+const SteamUser = require('steam-user');
+const SteamTotp = require('steam-totp'),
+
+const client = new SteamUser();
+
+const logOnOptions = {
+	accountName: 'your_steam_username',
+	password: 'your_steam_password',
+  twoFactorCode : SteamTotp.generateAuthCode('your_steam_shared_secret')
+};
+
+client.logOn(logOnOptions);
+
+client.on('loggedOn', () => {
+	console.log('Logged into Steam');
+});
+```
+
+If done correctly, running 'node project1.js` will now automatically make the bot login without the need of 
+manually entering the code.
+
+### Modules
+All that was simply added was const SteamTotp = require('steam-totp'); which will include the SteamTotp module. 
+Then in the logOnOptions object we added twoFactorCode : SteamTotp.generateAuthCode('your_steam_shared_secret').
+The twoFactorCode key will therefore generate the 2FA code utilizing your shared secret. 
+
+### How To Find Your Secrets
+You might be wondering were to find the shared secret and there are actually many tutorials depending on your 
+device. If you are on iphone you can try [this](http://forums.backpack.tf/index.php?/topic/45995-guide-how-to-get-your-shared-secret-from-ios-device-steam-mobile/) method while if you are using android
+you can try [this](https://github.com/SMVampire/SteamBotDev/wiki/Getting-Shared-Secret-from-Android-(Windows)) tutorial. All that you have to know
+is that the shared secret is used to login, while the identity secret is used for confirmations, but we will use 
+the identity secret later on when we it will be necessary. Remember to never show these secrets to anyone as they
+could easily sabotage your account.
+
+-Fedzero
+
