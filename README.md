@@ -10,6 +10,11 @@ A complete guide to building Steam bots using Node.js.
 	- [Chapter 1.3 - Starting to Code](./Chapter 1 - Basics/Chapter 1.3 - Starting to Code)
 	- [Chapter 1.4 - TOTP](./Chapter 1 - Basics/Chapter 1.4 - TOTP)
 	- [Chapter 1.5 - Errors](./Chapter 1 - Basics/Chapter 1.5 - Errors)
+- [Chapter 2 - Trading](./Chapter 2 - Trading)
+	- [Chapter 2.1 - Prerequisites](./Chapter 2 - Trading/Chapter 2.1 - Prerequisites)
+	- [Chapter 2.2 - Handling Trade Offers](./Chapter 2 - Trading/Chapter 2.2 - Handling Trade Offers)
+	- [Chapter 2.3 - Sending Trade Offers](./Chapter 2 - Trading/Chapter 2.3 - Sending Trade Offers)
+
 
 *(more chapters to come)*
 
