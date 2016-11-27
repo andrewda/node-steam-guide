@@ -42,5 +42,13 @@ manager.on('newOffer', (offer) => {
 				console.log(`Donation accepted. Status: ${status}.`)
 			}
 		});
+	} else {
+		offer.decline((err) => {
+			if (err) {
+				console.log(err);
+			} else {
+				console.log('Donation declined (wanted our items).')
+			}
+		});
 	}
 });
