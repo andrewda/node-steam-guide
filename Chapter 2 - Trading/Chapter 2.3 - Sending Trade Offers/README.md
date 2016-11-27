@@ -124,3 +124,5 @@ looking something like this:
 
 Nice. Obviously this will result in some pretty crazy trade offers, but again,
 we'll get into price checking in a future chapter.
+
+[Continue Reading](../Chapter 2.4 - Accepting Donations)
