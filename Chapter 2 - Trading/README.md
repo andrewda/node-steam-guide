@@ -16,4 +16,5 @@ random items from both parties' inventories.
 
 ## Authors
 
-This chapter was written by [@andrewda](https://github.com/andrewda).
+This chapter was written by [@andrewda](https://github.com/andrewda) and
+[@Fedzero](https://github.com/Fedzero).
