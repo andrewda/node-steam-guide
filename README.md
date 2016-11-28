@@ -15,6 +15,8 @@ A complete guide to building Steam bots using Node.js.
 	- [Chapter 2.2 - Handling Trade Offers](./Chapter 2 - Trading/Chapter 2.2 - Handling Trade Offers)
 	- [Chapter 2.3 - Sending Trade Offers](./Chapter 2 - Trading/Chapter 2.3 - Sending Trade Offers)
 	- [Chapter 2.4 - Accepting Donations](./Chapter 2 - Trading/Chapter 2.4 - Accepting Donations)
+- [Chapter 3 - User Interaction](./Chapter 3 - User Interaction)
+	- [Chapter 3.1 - Friend Requests](./Chapter 3 - User Interaction/Chapter 3.1 - Friend Requests)
 
 *(more chapters to come)*
 
