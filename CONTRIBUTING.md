@@ -7,7 +7,7 @@ the chapters stay consistent and easy to follow.
 2. If posting code, use three back ticks followed by `js` (\`\`\`js) in order
 to properly format your code.
 3. Break lines at the end of the last word before reaching 80 characters. Not
-81. Not 82. 80.
+81, not 82 – 80.
 4. If creating a new chapter, create a directory and title it
 `Chapter X - Description`.
 	- `X` should be the next chapter number in numerical order.
