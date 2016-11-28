@@ -45,5 +45,5 @@ http://cs.money/.
 
 ## Contributing
 
-Please read the [contribution guidelines]('./CONTRIBUTING.md') before creating
+Please read the [contribution guidelines](/CONTRIBUTING.md) before creating
 a Pull Request.
