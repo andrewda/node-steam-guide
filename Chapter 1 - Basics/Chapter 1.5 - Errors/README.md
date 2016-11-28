@@ -6,6 +6,9 @@ day and night on some beautiful code. Luckily, though, we not only have the
 entire internet at our disposal to search for people who have faced similar
 issues, but also a handy quick cheatsheet right here.
 
+If you receive random Steam issues, checkout the huge list of Steam error codes
+at [steamerrors.com](https://steamerrors.com).
+
 ### "Cannot find module: \*"
 
 If you get this error, you have most likely installed the given module
