@@ -40,3 +40,8 @@ In this course, you'll be making a number of mini-projects, which will all come
 together to create the final website. Eventually we'll end up with a site which
 can be used to make profit by selling and buying TF2 or CS:GO skins, similar to
 http://cs.money/.
+
+## Contributing
+
+Please read the [contribution guidelines]('./CONTRIBUTING.md') before creating
+a Pull Request.
