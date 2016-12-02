@@ -4,8 +4,8 @@ Let's whip up a basic web app real quick – it shouldn't be too hard! We just
 want it to say "Hello World!" when we hit the root path. Let's begin:
 
 ```js
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 app.get('/', (req, res) => {
 	res.send('Hello World!');
