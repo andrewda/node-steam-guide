@@ -17,6 +17,10 @@ A complete guide to building Steam bots using Node.js.
 	- [Chapter 2.4 - Accepting Donations](./Chapter 2 - Trading/Chapter 2.4 - Accepting Donations)
 - [Chapter 3 - User Interaction](./Chapter 3 - User Interaction)
 	- [Chapter 3.1 - Friend Requests](./Chapter 3 - User Interaction/Chapter 3.1 - Friend Requests)
+- [Chapter 4 - Basics of Web Development](./Chapter 4 - Basics of Web Development)
+	- [Chapter 4.1 - Prerequisites](./Chapter 4 - Basics of Web Development/Chapter 4.1 - Prerequisites)
+	- [Chapter 4.2 - Base App](./Chapter 4 - Basics of Web Development/Chapter 4.2 - Base App)
+	- [Chapter 4.3 - Using Templates](./Chapter 4 - Basics of Web Development/Chapter 4.3 - Using Templates)
 
 *(more chapters to come)*
 
