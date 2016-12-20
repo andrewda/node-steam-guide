@@ -27,3 +27,5 @@ our `app` to listen on port `3037` at the bottom.
 
 This is a very quick and dirty Express app, but we'll definitely continue
 adding on from here in order to create our final site.
+
+[Continue Reading](../Chapter 4.3 - Using Templates)
