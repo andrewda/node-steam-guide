@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Item List</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+			</tr>
+			{{#each items}}
+			<tr>
+				<td>{{this.name}}</td>
+				<td>{{this.price}}</td>
+			</tr>
+			{{/each}}
+		</table>
+	</body>
+</html>

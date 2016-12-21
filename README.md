@@ -24,6 +24,7 @@ A complete guide to building Steam bots using Node.js.
 	- [Chapter 4.1 - Prerequisites](./Chapter 4 - Basics of Web Development/Chapter 4.1 - Prerequisites)
 	- [Chapter 4.2 - Base App](./Chapter 4 - Basics of Web Development/Chapter 4.2 - Base App)
 	- [Chapter 4.3 - Using Templates](./Chapter 4 - Basics of Web Development/Chapter 4.3 - Using Templates)
+	- [Chapter 4.4 - Using Databases](./Chapter 4 - Basics of Web Development/Chapter 4.4 - Using Databases)
 
 *(more chapters to come)*
 
