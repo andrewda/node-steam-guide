@@ -39,7 +39,7 @@ manager.on('newOffer', (offer) => {
 			if (err) {
 				console.log(err);
 			} else {
-				console.log(`Donation accepted. Status: ${status}.`)
+				console.log(`Donation accepted. Status: ${status}.`);
 			}
 		});
 	} else {
@@ -47,7 +47,7 @@ manager.on('newOffer', (offer) => {
 			if (err) {
 				console.log(err);
 			} else {
-				console.log('Donation declined (wanted our items).')
+				console.log('Donation declined (wanted our items).');
 			}
 		});
 	}

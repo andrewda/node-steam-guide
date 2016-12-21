@@ -41,7 +41,7 @@ manager.on('newOffer', (offer) => {
 			if (err) {
 				console.log(err);
 			} else {
-				console.log(`Accepted offer. Status: ${status}.`)
+				console.log(`Accepted offer. Status: ${status}.`);
 			}
 		});
 	} else {
@@ -49,7 +49,7 @@ manager.on('newOffer', (offer) => {
 			if (err) {
 				console.log(err);
 			} else {
-				console.log('Canceled offer from scammer.')
+				console.log('Canceled offer from scammer.');
 			}
 		});
 	}
@@ -81,7 +81,7 @@ function sendRandomItem() {
 						if (err) {
 							console.log(err);
 						} else {
-							console.log(`Sent offer. Status: ${status}.`)
+							console.log(`Sent offer. Status: ${status}.`);
 						}
 					});
 				}

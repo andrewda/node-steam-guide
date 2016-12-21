@@ -27,7 +27,7 @@ function sendRandomItem() {
 				if (err) {
 					console.log(err);
 				} else {
-					console.log(`Sent offer. Status: ${status}.`)
+					console.log(`Sent offer. Status: ${status}.`);
 				}
 			});
 		}
@@ -103,7 +103,7 @@ function sendRandomItem() {
 						if (err) {
 							console.log(err);
 						} else {
-							console.log(`Sent offer. Status: ${status}.`)
+							console.log(`Sent offer. Status: ${status}.`);
 						}
 					});
 				}
