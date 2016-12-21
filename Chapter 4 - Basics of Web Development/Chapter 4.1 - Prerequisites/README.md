@@ -9,6 +9,10 @@ previous ones:
 - [`socket.io`](https://www.npmjs.com/package/socket.io)
 - [`mongoose`](https://www.npmjs.com/package/mongoose)
 
+Also, we'll be needing MongoDB in this chapter, so make sure you have it
+installed. There is an installation guide for each operating systems located
+[here](https://docs.mongodb.com/manual/installation/#tutorials).
+
 We'll get more into what each module does as the chapter progresses, but just
 keep in mind that these all provide useful tools for us when we're creating our
 website.
