@@ -67,3 +67,5 @@ well. When we load up the page, we should be greeted with something like this:
 
 Awesome! Now we know how to use basic templates on our website! We'll begin
 using these in the next section to begin making the site more dynamic.
+
+[Continue Reading](../Chapter 4.4 - Using Databases)
