@@ -47,6 +47,14 @@ akRedline.save((err, item) => {
 });
 ```
 
+In this block of code, we're saving two documents (the MongoDB equivalent of a
+MySQL "row") which are saved in the `Items` collection (or "table" for those
+familiar with MySQL). We define what a document within the collection should
+look like by creating the `Item` model. Then we form two new Item documents by
+initializing `new Item`'s and passing in the required properties (in this case
+a `name`, which we define as a string, and a `price`, which we define as a
+number).
+
 Before running this code, make sure you've started MongoDB using the `mongod`
 command or starting the service. After running this code, you should see
 something like this appear in the console:
