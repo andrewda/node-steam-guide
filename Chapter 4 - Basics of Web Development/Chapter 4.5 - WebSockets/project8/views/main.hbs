@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+	</head>
+	<body>
+		<h1>Page: {{title}}</h1>
+		Message: {{message}}
+	</body>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io();
+
+		socket.on('welcome', function(msg) {
+			alert(msg);
+		});
+	</script>
+</html>
