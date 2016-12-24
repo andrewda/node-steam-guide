@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Steam Login</title>
+		<style>
+		table, td, th {
+			border: 1px solid #ddd;
+			text-align: left;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			padding: 15px;
+		}
+		td {
+			height: 40px;
+		}
+		</style>
+	</head>
+	<body>
+		{{#if user}}
+		<h1>Welcome, {{user.personaname}}!</h1>
+		<table>
+			<tr>
+				<th>Property</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td>{{user.personaname}}</td>
+			</tr>
+			<tr>
+				<td>SteamID</td>
+				<td>{{user.steamid}}</td>
+			</tr>
+			<tr>
+				<td>Avatar</td>
+				<td><img src="{{user.avatar}}" /></td>
+			</tr>
+			<tr>
+				<td>Real Name (if set)</td>
+				<td>{{user.realname}}</td>
+			</tr>
+			<tr>
+				<td>Location (if set)</td>
+				<td>{{user.loccountrycode}}</td>
+			</tr>
+		</table>
+		<br />
+		<a href="/logout">Logout</a>
+		{{else}}
+		<a href="/auth/steam">Click here to login</a>
+		{{/if}}
+	</body>
+</html>

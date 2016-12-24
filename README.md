@@ -27,6 +27,9 @@ A complete guide to building Steam bots using Node.js.
 	- [Chapter 4.3 - Templates](./Chapter 4 - Basics of Web Development/Chapter 4.3 - Templates)
 	- [Chapter 4.4 - Databases](./Chapter 4 - Basics of Web Development/Chapter 4.4 - Databases)
 	- [Chapter 4.5 - WebSockets](./Chapter 4 - Basics of Web Development/Chapter 4.5 - WebSockets)
+- [Chapter 5 - Advanced Web Development](./Chapter 5 - Advanced Web Development)
+	- [Chapter 5.1 - Prerequisites](./Chapter 5 - Advanced Web Development/Chapter 5.1 - Prerequisites)
+	- [Chapter 5.2 - Authentication](./Chapter 5 - Advanced Web Development/Chapter 5.2 - Authentication)
 
 *(more chapters to come)*
 
