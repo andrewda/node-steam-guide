@@ -1,4 +1,4 @@
-# Chapter 4.4 - Using Databases
+# Chapter 4.4 - Databases
 
 Now we know how to send data to a template. That's great and all, but our site
 is still completely static. Nothing will ever change unless we mess with the

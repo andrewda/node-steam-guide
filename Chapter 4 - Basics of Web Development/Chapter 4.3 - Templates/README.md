@@ -1,4 +1,4 @@
-# Chapter 4.3 - Using Templates
+# Chapter 4.3 - Templates
 
 Ok – we got our basic web app done in the last section, which basically sends
 us a "Hello World!" message. Pretty good, but we want to show more information
