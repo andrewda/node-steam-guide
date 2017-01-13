@@ -198,8 +198,6 @@ module.exports = mongoose.model('Inventory', {
 
 const mongoose = require('mongoose');
 
-const mongoose = require('mongoose');
-
 module.exports = mongoose.model('Item', {
     market_hash_name: String,
     assetid: String,
