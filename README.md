@@ -31,7 +31,8 @@ A complete guide to building Steam bots using Node.js.
 	- [Chapter 5.1 - Prerequisites](./Chapter 5 - Advanced Web Development/Chapter 5.1 - Prerequisites)
 	- [Chapter 5.2 - Authentication](./Chapter 5 - Advanced Web Development/Chapter 5.2 - Authentication)
 - [Chapter 6 - Connecting Sites and Bots](./Chapter 6 - Connecting Sites and Bots)
-	- [Chapter 6.1 - Getting Started](./Chapter 6 - Connecting Sites and Bots/Chapter 6.1 - Getting Started)
+	- [Chapter 6.1 - Prerequisites](./Chapter 6 - Connecting Sites and Bots/Chapter 6.1 - Prerequisites)
+	- [Chapter 6.2 - Getting Started](./Chapter 6 - Connecting Sites and Bots/Chapter 6.2 - Getting Started)
 
 *(more chapters to come)*
 

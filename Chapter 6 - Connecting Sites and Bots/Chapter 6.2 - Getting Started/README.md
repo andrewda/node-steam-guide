@@ -1,4 +1,4 @@
-# Chapter 6.1 - Getting Started
+# Chapter 6.2 - Getting Started
 
 Our application is certainly going to need authentication, so we'll use our
 code from Chapter 5.2 for the base. Call this new folder `project10`. Then
