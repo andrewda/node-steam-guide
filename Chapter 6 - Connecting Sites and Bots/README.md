@@ -2,7 +2,8 @@
 
 ## Table of Contents
 
-- [Chapter 6.1 - Getting Started](./Chapter 6.1 - Getting Started)
+- [Chapter 6.1 - Prerequisites](./Chapter 6.1 - Prerequisites)
+- [Chapter 6.2 - Getting Started](./Chapter 6.2 - Getting Started)
 
 ## Summary
 
