@@ -133,4 +133,4 @@ be used to idle in multiple games at the same time, but we won't get into that
 during this guide. Do note that you must have the game in order to play it,
 unless the game is free like TF2.
 
-[Continue Reading](../Chapter 1.4 - TOTP)
+[Continue Reading](../Chapter%201.4%20-%20TOTP)
