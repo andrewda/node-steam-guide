@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Chapter 3.1 - Friend Requests](./Chapter 3.1 - Friend Requests)
+- [Chapter 3.1 - Friend Requests](./Chapter%203.1%20-%20Friend%20Requests)
 
 ## Summary
 

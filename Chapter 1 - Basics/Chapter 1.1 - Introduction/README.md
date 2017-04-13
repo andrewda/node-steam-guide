@@ -10,4 +10,4 @@ mini-projects.
 Without further adieu, let's jump right into the basics of programming Steam
 bots in the next section.
 
-[Continue Reading](../Chapter 1.2 - Prerequisites)
+[Continue Reading](../Chapter%201.2%20-%20Prerequisites)

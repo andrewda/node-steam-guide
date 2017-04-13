@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Chapter 5.1 - Prerequisites](./Chapter 5.1 - Prerequisites)
-- [Chapter 5.2 - Authentication](./Chapter 5.2 - Authentication)
+- [Chapter 5.1 - Prerequisites](./Chapter%205.1%20-%20Prerequisites)
+- [Chapter 5.2 - Authentication](./Chapter%205.2%20-%20Authentication)
 
 ## Summary
 

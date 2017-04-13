@@ -7,4 +7,4 @@ Chapter 1.2.
 - [`steam-tradeoffer-manager`](https://www.npmjs.com/package/steam-tradeoffer-manager)
 - [`steamcommunity`](https://www.npmjs.com/package/steamcommunity)
 
-[Continue Reading](../Chapter 2.2 - Handling Trade Offers)
+[Continue Reading](../Chapter%202.2%20-%20Handling%20Trade%20Offers)

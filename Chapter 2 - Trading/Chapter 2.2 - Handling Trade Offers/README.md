@@ -52,7 +52,7 @@ cookies back from the Steam servers. Then, we pass those cookies to our
 `manager` and `community`, which will allow them to be logged into Steam as
 well. We also tell our `community` instance to start checking to see if we have
 any pending confirmations every 10 second, and accept them if we do. This
-requires you to enter your identity secret, which we address in [Chapter 1.4](../../Chapter 1 - Basics/Chapter 1.4 - TOTP/#how-to-find-your-secrets).
+requires you to enter your identity secret, which we address in [Chapter 1.4](../../Chapter%201%20-%20Basics/Chapter%201.4%20-%20TOTP/#how-to-find-your-secrets).
 
 Sweet, so now we have our `manager`, `client` and `community` all
 logged into Steam. Now let's try doing something with all this. We'll start by
@@ -142,4 +142,4 @@ sort of error, we log that error to the command line. Otherwise, we print out
 Great! You have your first simple trade offer handling program. In the next
 chapter, we'll work on sending offers to users.
 
-[Continue Reading](../Chapter 2.3 - Sending Trade Offers)
+[Continue Reading](../Chapter%202.3%20-%20Sending%20Trade%20Offers)
