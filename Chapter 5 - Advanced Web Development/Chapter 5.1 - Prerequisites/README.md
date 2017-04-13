@@ -6,4 +6,4 @@ The dependencies we need for this chapter mainly relate to authentication:
 - [`passport-steam`](https://www.npmjs.com/package/passport-steam)
 - [`express-session`](https://www.npmjs.com/package/express-session)
 
-[Continue Reading](../Chapter 5.2 - Authentication)
+[Continue Reading](../Chapter%205.2%20-%20Authentication)
