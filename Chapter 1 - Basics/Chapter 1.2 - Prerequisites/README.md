@@ -10,4 +10,4 @@ prerequisites installed:
 We'll start adding more Node modules (which you install by using NPM) as the
 need arises.
 
-[Continue Reading](../Chapter 1.3 - Starting to Code)
+[Continue Reading](../Chapter%201.3%20-%20Starting%20to%20Code)
