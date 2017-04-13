@@ -17,4 +17,4 @@ We'll get more into what each module does as the chapter progresses, but just
 keep in mind that these all provide useful tools for us when we're creating our
 website.
 
-[Continue Reading](../Chapter 4.2 - Base App)
+[Continue Reading](../Chapter%204.2%20-%20Base%20App)
