@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Chapter 6.1 - Prerequisites](./Chapter%206.1%20-%20Prerequisites)
-- [Chapter 6.2 - Getting Started](./Chapter%206.2%20-%20Getting Started)
+- [Chapter 6.2 - Getting Started](./Chapter%206.2%20-%20Getting%20Started)
 
 ## Summary
 
