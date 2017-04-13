@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-- [Chapter 2.1 - Prerequisites](./Chapter 2.1 - Prerequisites)
-- [Chapter 2.2 - Handling Trade Offers](./Chapter 2.2 - Handling Trade Offers)
-- [Chapter 2.3 - Sending Trade Offers](./Chapter 2.3 - Sending Trade Offers)
-- [Chapter 2.4 - Accepting Donations](./Chapter 2.4 - Accepting Donations)
+- [Chapter 2.1 - Prerequisites](./Chapter%202.1%20-%20Prerequisites)
+- [Chapter 2.2 - Handling Trade Offers](./Chapter%202.2%20-%20Handling%20Trade%20Offers)
+- [Chapter 2.3 - Sending Trade Offers](./Chapter%202.3%20-%20Sending%20Trade%20Offers)
+- [Chapter 2.4 - Accepting Donations](./Chapter%202.4%20-%20Accepting%20Donations)
 
 ## Summary
 
