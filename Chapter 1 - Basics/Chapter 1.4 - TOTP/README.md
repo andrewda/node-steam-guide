@@ -62,4 +62,4 @@ market confirmations. We will use the identity secret later on when it becomes
 necessary. Remember to never share these secrets with anyone as they could
 easily sabotage your account.
 
-[Continue Reading](../Chapter 1.5 - Errors)
+[Continue Reading](../Chapter%201.5%20-%20Errors)
