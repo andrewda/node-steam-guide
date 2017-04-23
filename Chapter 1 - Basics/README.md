@@ -1,19 +1,20 @@
-# Chapter 1 - Basics
+# Глава 1 - Основы
 
-## Table of Contents
+## Содержание
 
-- [Chapter 1.1 - Introduction](./Chapter%201.1%20-%20Introduction)
-- [Chapter 1.2 - Prerequisites](./Chapter%201.2%20-%20Prerequisites)
-- [Chapter 1.3 - Starting to Code](./Chapter%201.3%20-%20Starting%20to%20Code)
-- [Chapter 1.4 - TOTP](./Chapter%201.4%20-%20TOTP)
-- [Chapter 1.5 - Errors](./Chapter%201.5%20-%20Errors)
+- [Глава 1.1 - Введние](./Chapter%201.1%20-%20Introduction)
+- [Глава 1.2 - Подготовка](./Chapter%201.2%20-%20Prerequisites)
+- [Глава 1.3 - Пишем код](./Chapter%201.3%20-%20Starting%20to%20Code)
+- [Глава 1.4 - TOTP](./Chapter%201.4%20-%20TOTP)
+- [Глава 1.5 - Ошибки](./Chapter%201.5%20-%20Errors)
 
-## Summary
+## Информация
 
-In this chapter, we'll learn about how to create a very basic Steam bot which
-can login to the Steam servers and act like it's playing TF2.
+В этой главе мы создадим простого Steam бота, который будет подключаться к<br>
+серверам Steam и играть в игру TF2.
 
-## Authors
+## Авторы
 
-This chapter was written by [@andrewda](https://github.com/andrewda) and
+Это глава написана [@andrewda](https://github.com/andrewda) и
 [@Fedzero](https://github.com/Fedzero).
+Перевёл [@Ranford98](https://github.com/Ranford98)
