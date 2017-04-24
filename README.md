@@ -1,7 +1,7 @@
 # Andrew's Guide to Steam Bots
 
 [![Codacy][codacy-img]][codacy-url]
-[![Patreon][patreon-img]][patreon-url]
+[![PayPal][paypal-img]][paypal-url]
 [![Steam Donate][steam-img]][steam-url]
 
 A complete guide to building Steam bots using Node.js.
@@ -74,9 +74,9 @@ keep this project going:
 
 <!-- Badge URLs -->
 
-[codacy-img]:  https://img.shields.io/codacy/grade/5822ba91cc994725932f71ee6b926400.svg?style=flat-square
-[codacy-url]:  https://www.codacy.com/app/andrewda/node-steam-guide
-[patreon-img]: https://img.shields.io/badge/donate-Patreon-orange.svg?style=flat-square
-[patreon-url]: https://www.patreon.com/andrewda
-[steam-img]:   https://img.shields.io/badge/donate-Steam-lightgrey.svg?style=flat-square
-[steam-url]:   https://steamcommunity.com/tradeoffer/new/?partner=132224795&token=HuEE9Mk1
+[codacy-img]: https://img.shields.io/codacy/grade/5822ba91cc994725932f71ee6b926400.svg?style=flat-square
+[codacy-url]: https://www.codacy.com/app/andrewda/node-steam-guide
+[paypal-img]: https://img.shields.io/badge/donate-PayPal-blue.svg?style=flat-square
+[paypal-url]: https://www.paypal.me/andrewda/5
+[steam-img]:  https://img.shields.io/badge/donate-Steam-lightgrey.svg?style=flat-square
+[steam-url]:  https://steamcommunity.com/tradeoffer/new/?partner=132224795&token=HuEE9Mk1
