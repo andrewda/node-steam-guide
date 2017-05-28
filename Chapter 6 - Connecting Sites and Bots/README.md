@@ -4,6 +4,7 @@
 
 - [Chapter 6.1 - Prerequisites](./Chapter%206.1%20-%20Prerequisites)
 - [Chapter 6.2 - Getting Started](./Chapter%206.2%20-%20Getting%20Started)
+- [Chapter 6.3 - Beginning the Connection](./Chapter%206.3%20-%20Beginning%20the%20Connection)
 
 ## Summary
 

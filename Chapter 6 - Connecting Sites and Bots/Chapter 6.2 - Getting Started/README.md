@@ -491,3 +491,5 @@ Your `/deposit` page should look something like this:
 And your console should have a message in it like this after clicking an item:
 
 ![console.png](screenshots/console.png)
+
+[Continue Reading](../Chapter%206.3%20-%20Beginning%20the%20Connection)

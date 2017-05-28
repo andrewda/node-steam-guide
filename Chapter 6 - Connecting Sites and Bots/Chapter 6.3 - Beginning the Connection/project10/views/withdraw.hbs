@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Withdraw</title>
+	</head>
+	<body>
+		<h1>Withdraw Items</h1>
+		<ul>
+			{{#each items}}
+			<li class="withdraw item" data-assetid="{{this.assetid}}">{{this.name}} (${{this.price}})</li>
+			{{/each}}
+		</ul>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/main.js"></script>
+</html>
