@@ -4,6 +4,8 @@
 [![PayPal][paypal-img]][paypal-url]
 [![Steam Donate][steam-img]][steam-url]
 
+[![Creative Commons][cc-img]][cc-url]
+
 A complete guide to building Steam bots using Node.js.
 
 ## Table of Contents
@@ -82,3 +84,5 @@ keep this project going:
 [paypal-url]: https://www.paypal.me/andrewda/5
 [steam-img]:  https://img.shields.io/badge/donate-Steam-lightgrey.svg?style=flat-square
 [steam-url]:  https://steamcommunity.com/tradeoffer/new/?partner=132224795&token=HuEE9Mk1
+[cc-img]:     https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-url]:     https://creativecommons.org/licenses/by/4.0/
