@@ -9,10 +9,10 @@ issues, but also a handy quick cheatsheet right here.
 If you receive random Steam issues, checkout the huge list of Steam error codes
 at [steamerrors.com](https://steamerrors.com).
 
-### "Cannot find module: \*"
+### "Cannot find module: THE_MODULE_NAME"
 
 If you get this error, you have most likely installed the given module
-incorrectly. Try reinstalling it by typing `npm install module` again.
+incorrectly. Try reinstalling it by typing `npm install THE_MODULE_NAME` again.
 
 ### "Error: InvalidPassword"
 
