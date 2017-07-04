@@ -1,9 +1,9 @@
 # Chapter 2.2 - Handling Trade Offers
 
 To start off this chapter, let's duplicate the code we made in the previous
-chapter to a new file. Call it `project2.js`. The code we wrote in Chapter 1
-will be the code we use from now on to create all of our bots. It will be the
-backbone for future bots we create.
+chapter to a new file. Call it `project2.js`. The code we wrote in 
+[Chapter 1](../../Chapter%201%20-%20Basics) will be the code we use from now 
+on to create all of our bots. It will be the backbone for future bots we create.
 
 Let's begin adding some code to the top of our project, copied from
 `project1.js`.

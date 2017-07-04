@@ -9,7 +9,8 @@ are sent back to our server with their information. You'll need to get your
 Steam API key for this section, which you can get from the developer page at
 http://steamcommunity.com/dev/apikey.
 
-Let's jump right into it. We're going to copy `project5` again from Chapter 4.3
+Let's jump right into it. We're going to copy `project5` again from 
+[Chapter 4.3](../../Chapter%204%20-%20Basics%20of%20Web%20Development/Chapter%204.3%20-%20Templates)
 and name the new folder `project9`. We'll start off by modifying the `app.js`:
 
 ```js

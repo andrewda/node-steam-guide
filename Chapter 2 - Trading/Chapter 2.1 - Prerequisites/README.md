@@ -2,7 +2,7 @@
 
 We'll need to add some more modules before getting started with trading. We'll
 install the following modules using NPM, just as we did with `steam-user` in
-Chapter 1.2.
+[Chapter 1.2](../../Chapter%201%20-%20Basics/Chapter%201.2%20-%20Prerequisites).
 
 - [`steam-tradeoffer-manager`](https://www.npmjs.com/package/steam-tradeoffer-manager)
 - [`steamcommunity`](https://www.npmjs.com/package/steamcommunity)

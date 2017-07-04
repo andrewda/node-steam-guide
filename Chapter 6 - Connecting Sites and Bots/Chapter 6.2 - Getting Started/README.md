@@ -1,9 +1,11 @@
 # Chapter 6.2 - Getting Started
 
 Our application is certainly going to need authentication, so we'll use our
-code from Chapter 5.2 for the base. Call this new folder `project10`. Then
-we'll add a couple templates using Handlebars. First let's create a couple new
-views: `deposit.hbs` and `withdraw.hbs`:
+code from 
+[Chapter 5.2](../../Chapter%205%20-%20Advanced%20Web%20Development/Chapter%205.2%20-%20Authentication) 
+for the base. Call this new folder `project10`. Then we'll add a couple 
+templates using Handlebars. First let's create a couple new views: `deposit
+.hbs` and `withdraw.hbs`:
 
 ```html
 <!-- deposit.hbs -->

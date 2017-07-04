@@ -9,10 +9,10 @@
 
 ## Summary
 
-Great! You made it through Chapter 1. This chapter is where we start to have
-some fun with Steam. We'll build a bot that handles and accepts/declines
-incoming trade offers. The bot will also send a specific user a trade with
-random items from both parties' inventories.
+Great! You made it through [Chapter 1](../Chapter%201%20-%20Basics). 
+This chapter is where we start to have some fun with Steam. We'll build a bot 
+that handles and accepts/declines incoming trade offers. The bot will also 
+send a specific user a trade with random items from both parties' inventories.
 
 ## Authors
 
