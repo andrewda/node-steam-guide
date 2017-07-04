@@ -6,10 +6,10 @@ we will need to identify what a donation fundamentally is: a donation is when
 the user sends us items and we do not send any items back in the trade. Knowing
 this we can use our knowledge to implement this very simple concept.
 
-Let's create a new file called `project3.js` and copy the code from
-[Chapter 2.2](../Chapter 2.2 - Handling Trade Offers). We'll recode the
-`newOffer` event listener so that it will accept incoming donations. Delete all
-the code within the `newOffer` event listener and we can get started.
+Let's create a new file called `project3.js` and copy the code from 
+[Chapter 2.2](../Chapter%202.2%20-%20Handling%20Trade%20Offers). We'll recode 
+the `newOffer` event listener so that it will accept incoming donations. 
+Delete all the code within the `newOffer` event listener and we can get started.
 
 ```js
 manager.on('newOffer', (offer) => {

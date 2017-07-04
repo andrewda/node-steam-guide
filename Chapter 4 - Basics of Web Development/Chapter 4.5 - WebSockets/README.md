@@ -9,7 +9,7 @@ front-end is legitimate, and not spoofed by a user to try to get extra items.
 We'll get into this more later, but for now just remember not to trust the
 messages from the front-end unless they've been verified.
 
-Let's copy our `project5` code from Chapter 4.3 to a new folder which we'll
+Let's copy our `project5` code from [Chapter 4.3](../Chapter%204.3%20-%20Templates) to a new folder which we'll
 title `project8`. Then we'll edit our `app.js`.
 
 ```js

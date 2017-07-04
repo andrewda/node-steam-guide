@@ -71,8 +71,10 @@ something like this appear in the console:
 ```
 
 Fantastic! You've saved your first documents to a MongoDB collection. Now we'll
-implement it into the code we had in Chapter 4.3. Make a new directory called
-`project7` and copy the contents of Chapter 4.3's code into it. We'll be
+implement it into the code we had in 
+[Chapter 4.3](../Chapter%204.3%20-%20Templates). Make a new directory called
+`project7` and copy the contents of Chapter 
+[Chapter 4.3](../Chapter%204.3%20-%20Templates)'s code into it. We'll be 
 working with the `app.js` code:
 
 ```js
