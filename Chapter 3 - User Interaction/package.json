@@ -9,9 +9,6 @@
   "author": "Default User",
   "license": "ISC",
   "dependencies": {
-    "cookie-parser": "^1.4.3"
-    "http": "0.0.0",
-    "path": "^0.12.7",
     "steam-totp": "^2.0.1",
     "steam-tradeoffer-manager": "^2.8.0",
     "steam-user": "^3.21.7",
