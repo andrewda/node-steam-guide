@@ -6,6 +6,7 @@ prerequisites installed:
 - [Node.js and NPM](https://nodejs.org/en/)
 - [`steam-user`](https://www.npmjs.com/package/steam-user) (`npm install
 	steam-user`)
+- [`steam-totp`](https://www.npmjs.com/package/steam-totp) (`npm install steam-totp`)
 
 We'll start adding more Node modules (which you install by using NPM) as the
 need arises.
