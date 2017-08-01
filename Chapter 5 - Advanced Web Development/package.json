@@ -1,0 +1,28 @@
+{
+  "name": "project9",
+  "version": "1.0.9",
+  "description": "JS Steam bots project, built following ~ https://github.com/andrewda/node-steam-guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Default User",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.3",
+    "http": "0.0.0",
+    "mongoose": "^4.11.1",
+    "morgan": "^1.8.2",
+    "passport": "^0.3.2",
+    "passport-steam": "^1.0.8",
+    "path": "^0.12.7",
+    "socket.io": "^2.0.3",
+    "steam-totp": "^2.0.1",
+    "steam-tradeoffer-manager": "^2.8.0",
+    "steam-user": "^3.21.7",
+    "steamcommunity": "^3.31.0"
+  }
+}
