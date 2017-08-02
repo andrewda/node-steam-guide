@@ -1,0 +1,16 @@
+{
+  "name": "project8",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.1",
+    "morgan": "^1.8.2",
+    "socket.io": "^2.0.3",
+    "steam-totp": "^2.0.1",
+    "steam-tradeoffer-manager": "^2.8.0",
+    "steam-user": "^3.21.7",
+    "steamcommunity": "^3.31.0"
+  }
+}

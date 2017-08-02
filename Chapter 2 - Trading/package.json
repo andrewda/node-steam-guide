@@ -1,0 +1,12 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "steam-totp": "^2.0.1",
+    "steam-tradeoffer-manager": "^2.8.0",
+    "steam-user": "^3.21.7",
+    "steamcommunity": "^3.31.0"
+  }
+}
+
