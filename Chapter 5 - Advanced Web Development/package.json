@@ -1,7 +1,6 @@
 {
   "name": "project9",
   "version": "1.0.9",
-  "description": "JS Steam bots project, built following ~ https://github.com/andrewda/node-steam-guide",
   "license": "CC-BY-4.0",
   "dependencies": {
     "express": "^4.15.3",
