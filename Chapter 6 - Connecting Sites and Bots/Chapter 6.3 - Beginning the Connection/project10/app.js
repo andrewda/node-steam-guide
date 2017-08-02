@@ -1,7 +1,7 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
 const session = require('express-session');
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
 const passportSocket = require('passport.socketio');
 const async = require('async');
 const passport = require('passport');
@@ -65,7 +65,7 @@ passport.use(new SteamStrategy({
 ));
 
 io.use(passportSocket.authorize({
-	cookieParser: cookieParser,
+	cookieParser: cookieParser
 	key: 'U_SESSION',
 	secret: 'some secret string',
 	store: sessionStore
@@ -208,5 +208,5 @@ app.get('/logout', (req, res) => {
 });
 
 server.listen(3037, () => {
-	console.log('listening')
+	console.log('listening');
 });
