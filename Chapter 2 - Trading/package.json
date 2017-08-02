@@ -1,6 +1,6 @@
 {
   "name": "project3",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "license": "CC-BY-4.0",
   "dependencies": {
     "steam-totp": "^2.0.1",
