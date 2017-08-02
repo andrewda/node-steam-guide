@@ -1,7 +1,6 @@
 {
   "name": "project10",
   "version": "1.0.10",
-  "description": "JS Steam bots project, built following ~ https://github.com/andrewda/node-steam-guide",
   "license": "CC-BY-4.0",
   "dependencies": {
     "connect-mongo": "^1.3.2",
