@@ -1,6 +1,6 @@
 {
   "name": "project9",
-  "version": "1.0.9",
+  "version": "1.0.0",
   "license": "CC-BY-4.0",
   "dependencies": {
     "express": "^4.15.3",
