@@ -1,16 +1,9 @@
 {
   "name": "project1",
-  "version": "1.0.1",
-  "description": "JS Steam bots project, built following ~ https://github.com/andrewda/node-steam-guide",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Default",
+  "version": "1.0.0",
   "license": "CC-BY-4.0",
   "dependencies": {
     "steam-totp": "^2.0.1",
     "steam-user": "^3.21.7",
   }
 }
-
