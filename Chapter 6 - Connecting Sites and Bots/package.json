@@ -1,6 +1,6 @@
 {
   "name": "project10",
-  "version": "1.0.10",
+  "version": "1.0.0",
   "license": "CC-BY-4.0",
   "dependencies": {
     "connect-mongo": "^1.3.2",
