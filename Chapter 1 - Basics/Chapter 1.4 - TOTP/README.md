@@ -55,7 +55,7 @@ secret code. This is added as a key to the `logOnOptions` object.
 You might be wondering where to find the shared secret and there are actually
 many tutorials depending on your device. If you are on iPhone you can try
 [this](http://forums.backpack.tf/index.php?/topic/45995-guide-how-to-get-your-shared-secret-from-ios-device-steam-mobile/)
-method, while if you are using an Android you can try [this](https://github.com/SMVampire/SteamBotDev/wiki/Getting-Shared-Secret-from-Android-(Windows))
+method, while if you are using an Android you can try [this](https://www.reddit.com/r/SteamBot/comments/3w5zwb/info_get_your_2fa_codes_from_android_no_root/)
 tutorial. All that you have to know is that the shared secret is used to
 generate your 2FA login code, while the identity secret is used for trade and
 market confirmations. We will use the identity secret later on when it becomes
