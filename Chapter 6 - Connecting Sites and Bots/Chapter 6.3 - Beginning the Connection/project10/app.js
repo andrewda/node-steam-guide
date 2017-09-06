@@ -13,6 +13,7 @@ const socket = require('socket.io');
 const MongoStore = require('connect-mongo')(session);
 const SteamCommunity = require('steamcommunity');
 const SteamTotp = require('steam-totp');
+const config = require('./config.json');
 
 const Inventory = require('./models/inventory');
 const Item = require('./models/item');
@@ -29,9 +30,9 @@ const hbs = handlebars.create();
 const community = new SteamCommunity();
 const sessionStore = new MongoStore({ mongooseConnection: mongoose.connection });
 const bot = new SteamBot({
-	accountName: 'username',
-	password: 'password',
-	twoFactorCode: SteamTotp.generateAuthCode('shared secret')
+	accountName: config.username,
+	password: config.password,
+	twoFactorCode: SteamTotp.generateAuthCode(config.sharedSecret)
 });
 
 mongoose.connect('mongodb://127.0.0.1:27017/guide');
@@ -58,7 +59,7 @@ passport.deserializeUser((obj, done) => {
 passport.use(new SteamStrategy({
 		returnURL: 'http://localhost:3037/auth/steam/return',
 		realm: 'http://localhost:3037/',
-		apiKey: 'steam api key'
+		apiKey: config.apiKey	// Steam API key
 	}, (identifier, profile, done) => {
 		return done(null, profile);
 	}
@@ -67,7 +68,7 @@ passport.use(new SteamStrategy({
 io.use(passportSocket.authorize({
 	cookieParser: cookieParser,
 	key: 'U_SESSION',
-	secret: 'some secret string',
+	secret: config.secretString, // some secret string
 	store: sessionStore
 }));
 
@@ -106,7 +107,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(session({
-    secret: 'some secret string',
+    secret: config.secretString,	// some secret string
     name: 'U_SESSION',
     resave: true,
     saveUninitialized: true,
