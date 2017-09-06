@@ -4,6 +4,7 @@ const session = require('express-session');
 const passport = require('passport');
 const SteamStrategy = require('passport-steam').Strategy;
 const path = require('path');
+const config = require('./config.json');
 
 const app = express();
 const hbs = handlebars.create();
@@ -19,7 +20,7 @@ passport.deserializeUser((obj, done) => {
 passport.use(new SteamStrategy({
 		returnURL: 'http://localhost:3037/auth/steam/return',
 		realm: 'http://localhost:3037/',
-		apiKey: 'your api key'
+		apiKey: config.apiKey	// Steam API key
 	}, (identifier, profile, done) => {
 		return done(null, profile);
 	}
@@ -30,7 +31,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(session({
-    secret: 'some secret string',
+	secret: config.secretString, // some secret string
     name: 'U_SESSION',
     resave: true,
     saveUninitialized: true
