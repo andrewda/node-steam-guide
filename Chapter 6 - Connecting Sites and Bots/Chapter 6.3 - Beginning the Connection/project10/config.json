@@ -1,7 +1,7 @@
 {
-	"username":"",
-	"password":"",
-	"sharedSecret":"",
-	"apiKey":"",
-	"secretString":""
+	"username": "",
+	"password": "",
+	"sharedSecret": "",
+	"apiKey": "",
+	"secretString": ""
 }
