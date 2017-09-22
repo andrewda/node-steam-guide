@@ -2,6 +2,7 @@ const SteamUser = require('steam-user');
 const SteamTotp = require('steam-totp');
 const SteamCommunity = require('steamcommunity');
 const TradeOfferManager = require('steam-tradeoffer-manager');
+const config = require('./config.json');
 
 const client = new SteamUser();
 const community = new SteamCommunity();
@@ -12,9 +13,9 @@ const manager = new TradeOfferManager({
 });
 
 const logOnOptions = {
-	accountName: 'your_steam_username',
-	password: 'your_steam_password',
-	twoFactorCode: SteamTotp.generateAuthCode('your_steam_shared_secret')
+	accountName: config.username,
+	password: config.password,
+	twoFactorCode: SteamTotp.generateAuthCode(config.sharedSecret)
 };
 
 client.logOn(logOnOptions);
@@ -30,7 +31,7 @@ client.on('webSession', (sessionid, cookies) => {
 	manager.setCookies(cookies);
 
 	community.setCookies(cookies);
-	community.startConfirmationChecker(10000, 'your_identity_secret');
+	community.startConfirmationChecker(10000, config.idSecret);
 
 	sendRandomItem();
 });

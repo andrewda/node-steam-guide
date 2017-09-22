@@ -51,7 +51,7 @@ passport.deserializeUser((obj, done) => {
 passport.use(new SteamStrategy({
 		returnURL: 'http://localhost:3037/auth/steam/return',
 		realm: 'http://localhost:3037/',
-		apiKey: 'your Steam API key'
+		apiKey: config.apiKey
 	}, (identifier, profile, done) => {
 		return done(null, profile);
 	}
@@ -60,7 +60,7 @@ passport.use(new SteamStrategy({
 io.use(passportSocket.authorize({
 	cookieParser: cookieParser,
 	key: 'U_SESSION',
-	secret: 'some secret string',
+	secret: config.secretString,
 	store: sessionStore
 }));
 
@@ -83,7 +83,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(session({
-    secret: 'some secret string',
+    secret: config.secretString,
     name: 'U_SESSION',
     resave: true,
     saveUninitialized: true,
