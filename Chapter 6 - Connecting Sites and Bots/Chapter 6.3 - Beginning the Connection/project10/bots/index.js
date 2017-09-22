@@ -1,6 +1,7 @@
 const SteamUser = require('steam-user');
 const SteamCommunity = require('steamcommunity');
 const TradeOfferManager = require('steam-tradeoffer-manager');
+const config = require('../config.json');
 
 class SteamBot {
 	constructor(logOnOptions) {
@@ -29,7 +30,7 @@ class SteamBot {
 			this.manager.setCookies(cookies);
 
 			this.community.setCookies(cookies);
-			this.community.startConfirmationChecker(10000, 'identity secret');
+			this.community.startConfirmationChecker(10000, config.identitySecret);
 		});
 	}
 
