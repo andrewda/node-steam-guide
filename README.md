@@ -8,6 +8,10 @@
 
 A complete guide to building Steam bots using Node.js.
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
+</a>
+
 ## Table of Contents
 
 - [Chapter 1 - Basics](./Chapter%201%20-%20Basics)
