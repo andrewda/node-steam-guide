@@ -1,5 +1,9 @@
 # Chapter 4.1 - Prerequisites
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
+</a>
+
 We're going to need a couple more things for this chapter than we did for the
 previous ones:
 

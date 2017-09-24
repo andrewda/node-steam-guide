@@ -1,5 +1,9 @@
 # Chapter 6.3 - Beginning the Connection
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
+</a>
+
 After the last chapter, we now have an absolutely _stunning_ website with a
 backend that "responds" to the user's actions using Socket.io. Alright, I won't
 lie, the website doesn't _actually_ look the best, but it does what it's

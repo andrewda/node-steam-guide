@@ -1,5 +1,9 @@
 # Chapter 5.2 - Authentication
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
+</a>
+
 Well, now you should have the basics of web development down, so let's get into
 some more advanced topics. In this chapter, we're going to be focusing on
 authentication using Steam's API. The Steam API uses OpenID 2.0, so it might be

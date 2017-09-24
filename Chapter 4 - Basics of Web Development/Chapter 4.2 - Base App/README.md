@@ -1,5 +1,9 @@
 # Chapter 4.2 - Base Web App
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
+</a>x
+
 Let's whip up a basic web app real quick – it shouldn't be too hard! We just
 want it to say "Hello World!" when we hit the root path. Let's begin:
 

@@ -1,5 +1,9 @@
 # Chapter 1.3 - Starting to Code
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
+</a>
+
 Once we have our prerequisites installed, we can begin writing the code
 necessary to login to Steam and simulate the Steam client. First of all, let's
 create a new file and call it `project1.js`. Inside this file, we'll write out

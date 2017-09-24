@@ -1,5 +1,9 @@
 # Chapter 2.2 - Handling Trade Offers
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
+</a>
+
 To start off this chapter, let's duplicate the code we made in the previous
 chapter to a new file. Call it `project2.js`. The code we wrote in 
 [Chapter 1](../../Chapter%201%20-%20Basics) will be the code we use from now 
