@@ -16,24 +16,24 @@ the `newOffer` event listener so that it will accept incoming donations.
 Delete all the code within the `newOffer` event listener and we can get started.
 
 ```js
-manager.on('newOffer', (offer) => {
-	if (offer.itemsToGive.length === 0) {
-		offer.accept((err, status) => {
-			if (err) {
-				console.log(err);
-			} else {
-				console.log(`Donation accepted. Status: ${status}.`);
-			}
-		});
-	} else {
-		offer.decline((err) => {
-			if (err) {
-				console.log(err);
-			} else {
-				console.log('Donation declined (wanted our items).');
-			}
-		});
-	}
+manager.on('newOffer', offer => {
+  if (offer.itemsToGive.length === 0) {
+    offer.accept((err, status) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(`Donation accepted. Status: ${status}.`);
+      }
+    });
+  } else {
+    offer.decline(err => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log('Donation declined (wanted our items).');
+      }
+    });
+  }
 });
 ```
 

@@ -4,6 +4,6 @@
   "license": "CC-BY-4.0",
   "dependencies": {
     "steam-totp": "^2.0.1",
-    "steam-user": "^3.21.7",
+    "steam-user": "^3.21.7"
   }
 }

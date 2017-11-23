@@ -15,13 +15,13 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
-	Item.find({}, (err, items) => {
-		if (err) {
-			console.log(err);
-		}
+  Item.find({}, (err, items) => {
+    if (err) {
+      console.log(err);
+    }
 
-		res.render('main', { items });
-	});
+    res.render('main', { items });
+  });
 });
 
 app.listen(3037);

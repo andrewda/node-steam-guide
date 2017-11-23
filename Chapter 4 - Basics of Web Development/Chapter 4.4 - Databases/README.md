@@ -18,36 +18,38 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://127.0.0.1:27017/guide');
 
-const Item = mongoose.model('Item', mongoose.Schema({
+const Item = mongoose.model(
+  'Item',
+  mongoose.Schema({
     name: String,
-	price: Number
-}));
+    price: Number
+  })
+);
 
 const awpAsiimov = new Item({
-	name: 'AWP | Asiimov (Field-Tested)',
-	price: 27.75
+  name: 'AWP | Asiimov (Field-Tested)',
+  price: 27.75
 });
 
-
 const akRedline = new Item({
-	name: 'AK-47 | Redline (Field-Tested)',
-	price: 5.52
+  name: 'AK-47 | Redline (Field-Tested)',
+  price: 5.52
 });
 
 awpAsiimov.save((err, item) => {
-	if (err) {
-		console.log(err);
-	} else {
-		console.log(item);
-	}
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(item);
+  }
 });
 
 akRedline.save((err, item) => {
-	if (err) {
-		console.log(err);
-	} else {
-		console.log(item);
-	}
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(item);
+  }
 });
 ```
 
@@ -170,8 +172,8 @@ within the `app.js` file. Let's extract the model we're defining in here into a
 const mongoose = require('mongoose');
 
 module.exports = mongoose.model('Item', {
-    name: String,
-	price: Number
+  name: String,
+  price: Number
 });
 ```
 

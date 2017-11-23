@@ -35,9 +35,7 @@ we have been, so I shouldn't need to explain what each one does.
 ```js
 // bots/index.js
 
-class SteamBot {
-
-}
+class SteamBot {}
 ```
 
 This will be the base for our bot. It's just a vanilla class, so we should
@@ -47,17 +45,17 @@ probably start adding to it. Let's start with a constructor.
 // bots/index.js
 
 class SteamBot {
-    constructor(logOnOptions) {
-		this.client = new SteamUser();
-		this.community = new SteamCommunity();
-		this.manager = new TradeOfferManager({
-			steam: this.client,
-			community: this.community,
-			language: 'en'
-		});
+  constructor(logOnOptions) {
+    this.client = new SteamUser();
+    this.community = new SteamCommunity();
+    this.manager = new TradeOfferManager({
+      steam: this.client,
+      community: this.community,
+      language: 'en'
+    });
 
-		this.logOn(logOnOptions);
-	}
+    this.logOn(logOnOptions);
+  }
 }
 ```
 
@@ -213,34 +211,47 @@ add some code to our Socket.io handlers.
 ```js
 // app.js
 
-io.on('connection', (socket) => {
-	socket.on('deposit', (data) => {
-		const user = socket.request.user;
-		console.log(`${user.personaname} is depositting ${data.assetid}`);
+io.on('connection', socket => {
+  socket.on('deposit', data => {
+    const user = socket.request.user;
+    console.log(`${user.personaname} is depositting ${data.assetid}`);
 
-		bot.sendDepositTrade(user.steamid, data.assetid, (err, success, tradeOffer) => {
-			// TODO: Handle these events on the website
-			if (err && !success) {
-				socket.emit('failure', { message: 'We could not process your request at this time.' });
-			} else {
-				socket.emit('success', { tradeOffer });
-			}
-		});
-	});
+    bot.sendDepositTrade(
+      user.steamid,
+      data.assetid,
+      (err, success, tradeOffer) => {
+        // TODO: Handle these events on the website
+        if (err && !success) {
+          socket.emit('failure', {
+            message: 'We could not process your request at this time.'
+          });
+        } else {
+          socket.emit('success', { tradeOffer });
+        }
+      }
+    );
+  });
 
-	socket.on('withdraw', (data) => {
-		const user = socket.request.user;
-		console.log(`${user.personaname} is withdrawing ${data.assetid}`);
+  socket.on('withdraw', data => {
+    const user = socket.request.user;
+    console.log(`${user.personaname} is withdrawing ${data.assetid}`);
 
-		bot.sendWithdrawTrade(user.steamid, user.credits, data.assetid, (err, success, tradeOffer) => {
-			// TODO: Handle these events on the website
-			if (err && !success) {
-				socket.emit('failure', { message: 'We could not process your request at this time.' });
-			} else {
-				socket.emit('success', { tradeOffer });
-			}
-		});
-	});
+    bot.sendWithdrawTrade(
+      user.steamid,
+      user.credits,
+      data.assetid,
+      (err, success, tradeOffer) => {
+        // TODO: Handle these events on the website
+        if (err && !success) {
+          socket.emit('failure', {
+            message: 'We could not process your request at this time.'
+          });
+        } else {
+          socket.emit('success', { tradeOffer });
+        }
+      }
+    );
+  });
 });
 ```
 

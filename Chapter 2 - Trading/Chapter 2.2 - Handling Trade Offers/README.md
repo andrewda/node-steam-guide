@@ -43,10 +43,10 @@ Let's add some more code while we're at it.
 
 ```js
 client.on('webSession', (sessionid, cookies) => {
-	manager.setCookies(cookies);
+  manager.setCookies(cookies);
 
-	community.setCookies(cookies);
-	community.startConfirmationChecker(10000, 'your_identity_secret');
+  community.setCookies(cookies);
+  community.startConfirmationChecker(10000, 'your_identity_secret');
 });
 ```
 
@@ -64,16 +64,16 @@ accepting all incoming trade offers if they come from an account we trust.
 Let's give it go.
 
 ```js
-manager.on('newOffer', (offer) => {
-	if (offer.partner.getSteamID64() === 'your_trusted_account_id') {
-		offer.accept((err, status) => {
-			if (err) {
-				console.log(err);
-			} else {
-				console.log(`Accepted offer. Status: ${status}.`);
-			}
-		});
-	}
+manager.on('newOffer', offer => {
+  if (offer.partner.getSteamID64() === 'your_trusted_account_id') {
+    offer.accept((err, status) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(`Accepted offer. Status: ${status}.`);
+      }
+    });
+  }
 });
 ```
 
@@ -117,24 +117,24 @@ around, cluttering up our trade offer inbox. We can easily decline these offers
 by adding a bit more code to what we previously wrote.
 
 ```js
-manager.on('newOffer', (offer) => {
-	if (offer.partner.getSteamID64() === 'your_trusted_account_id') {
-		offer.accept((err, status) => {
-			if (err) {
-				console.log(err);
-			} else {
-				console.log(`Accepted offer. Status: ${status}.`);
-			}
-		});
-	} else {
-		offer.decline((err) => {
-			if (err) {
-				console.log(err);
-			} else {
-				console.log('Canceled offer from scammer.');
-			}
-		});
-	}
+manager.on('newOffer', offer => {
+  if (offer.partner.getSteamID64() === 'your_trusted_account_id') {
+    offer.accept((err, status) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(`Accepted offer. Status: ${status}.`);
+      }
+    });
+  } else {
+    offer.decline(err => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log('Canceled offer from scammer.');
+      }
+    });
+  }
 });
 ```
 

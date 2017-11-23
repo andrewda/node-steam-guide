@@ -14,14 +14,14 @@ const SteamUser = require('steam-user');
 const client = new SteamUser();
 
 const logOnOptions = {
-	accountName: 'your_steam_username',
-	password: 'your_steam_password'
+  accountName: 'your_steam_username',
+  password: 'your_steam_password'
 };
 
 client.logOn(logOnOptions);
 
 client.on('loggedOn', () => {
-	console.log('Logged into Steam');
+  console.log('Logged into Steam');
 });
 ```
 
@@ -53,8 +53,8 @@ After `require`ing our modules and creating instances, we define a new object.
 
 ```js
 const logOnOptions = {
-	accountName: 'your_steam_username',
-	password: 'your_steam_password'
+  accountName: 'your_steam_username',
+  password: 'your_steam_password'
 };
 ```
 
@@ -83,7 +83,7 @@ We then proceed to adding an event listener.
 
 ```js
 client.on('loggedOn', () => {
-	console.log('Logged into Steam');
+  console.log('Logged into Steam');
 });
 ```
 
@@ -110,10 +110,10 @@ its status to online and start playing some good ol' Team Fortress 2.
 
 ```js
 client.on('loggedOn', () => {
-	console.log('Logged into Steam');
+  console.log('Logged into Steam');
 
-	client.setPersona(SteamUser.Steam.EPersonaState.Online);
-	client.gamesPlayed(440);
+  client.setPersona(SteamUser.Steam.EPersonaState.Online);
+  client.gamesPlayed(440);
 });
 ```
 

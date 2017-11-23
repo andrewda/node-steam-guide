@@ -11,7 +11,7 @@ use it like so:
 
 ```js
 client.on('friendRelationship', (steamid, relationship) => {
-    // Code to run when our relationship with `steamid` changes
+  // Code to run when our relationship with `steamid` changes
 });
 ```
 
@@ -36,9 +36,9 @@ it. Let's consider the following code:
 
 ```js
 client.on('friendRelationship', (steamid, relationship) => {
-    if (relationship === 2) {
-        // Code to run when we get a `PendingInvitee`
-    }
+  if (relationship === 2) {
+    // Code to run when we get a `PendingInvitee`
+  }
 });
 ```
 
@@ -51,10 +51,10 @@ achieve this using `steam-user`'s `.addFriend()` and `.chatMessage()` methods:
 
 ```js
 client.on('friendRelationship', (steamid, relationship) => {
-    if (relationship === 2) {
-        client.addFriend(steamid);
-        client.chatMessage(steamid, 'Hello there! Thanks for adding me!');
-    }
+  if (relationship === 2) {
+    client.addFriend(steamid);
+    client.chatMessage(steamid, 'Hello there! Thanks for adding me!');
+  }
 });
 ```
 

@@ -96,23 +96,25 @@ order to tell the back end when items are clicked. Create a new directory named
 
 var socket = io();
 
-$(function() {
-	$('.deposit.item').click(function(one, two) {
-		socket.emit('deposit', {
-			assetid: $(this).data('assetid')
-		});
+$(
+  (function() {
+    $('.deposit.item').click(function(one, two) {
+      socket.emit('deposit', {
+        assetid: $(this).data('assetid')
+      });
 
-		alert('We will send you a tradeoffer for your ' + $(this).text());
-	});
+      alert('We will send you a tradeoffer for your ' + $(this).text());
+    });
 
-	$('.withdraw.item').click(function(one, two) {
-		socket.emit('withdraw', {
-			assetid: $(this).data('assetid')
-		});
+    $('.withdraw.item').click(function(one, two) {
+      socket.emit('withdraw', {
+        assetid: $(this).data('assetid')
+      });
 
-		alert('We will send you a tradeoffer with a ' + $(this).text());
-	});
-}());
+      alert('We will send you a tradeoffer with a ' + $(this).text());
+    });
+  })()
+);
 ```
 
 Alright, cool. This should be all the client-side JS we need for now. When a
@@ -139,36 +141,41 @@ const request = require('request');
 
 const Price = require('../models/price');
 
-module.exports = (interval) => {
-	update();
+module.exports = interval => {
+  update();
 
-	setInterval(update, interval);
+  setInterval(update, interval);
 };
 
 function update() {
-	request('https://api.csgofast.com/price/all', (err, response, body) => {
-		if (err) {
-			console.log(err);
-		} else {
-			let json = {};
+  request('https://api.csgofast.com/price/all', (err, response, body) => {
+    if (err) {
+      console.log(err);
+    } else {
+      let json = {};
 
-			try {
-				json = JSON.parse(body);
-			} catch (e) {
-				console.log(e);
-			}
+      try {
+        json = JSON.parse(body);
+      } catch (e) {
+        console.log(e);
+      }
 
-			_.forOwn(json, (price, market_hash_name) => {
-				Price.update({ market_hash_name }, {
-					$set: { price }
-				}, { upsert: true }, (err) => {
-					if (err) {
-						console.log(err);
-					}
-				});
-			});
-		}
-	});
+      _.forOwn(json, (price, market_hash_name) => {
+        Price.update(
+          { market_hash_name },
+          {
+            $set: { price }
+          },
+          { upsert: true },
+          err => {
+            if (err) {
+              console.log(err);
+            }
+          }
+        );
+      });
+    }
+  });
 }
 ```
 
@@ -186,16 +193,16 @@ prices.
 const mongoose = require('mongoose');
 
 module.exports = mongoose.model('Inventory', {
-    steamid: String,
-	updated: Number,
-	items: [
-        {
-            market_name: String,
-            assetid: String,
-            image: String,
-            price: Number
-        }
-    ]
+  steamid: String,
+  updated: Number,
+  items: [
+    {
+      market_name: String,
+      assetid: String,
+      image: String,
+      price: Number
+    }
+  ]
 });
 ```
 
@@ -205,10 +212,10 @@ module.exports = mongoose.model('Inventory', {
 const mongoose = require('mongoose');
 
 module.exports = mongoose.model('Item', {
-    market_hash_name: String,
-    assetid: String,
-    image: String,
-    price: Number
+  market_hash_name: String,
+  assetid: String,
+  image: String,
+  price: Number
 });
 ```
 
@@ -218,8 +225,8 @@ module.exports = mongoose.model('Item', {
 const mongoose = require('mongoose');
 
 module.exports = mongoose.model('Price', {
-	market_hash_name: String,
-	price: Number
+  market_hash_name: String,
+  price: Number
 });
 ```
 
@@ -235,7 +242,7 @@ Here, we'll start by importing our modules and initializing them.
 const express = require('express');
 const handlebars = require('express-handlebars');
 const session = require('express-session');
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
 const passportSocket = require('passport.socketio');
 const async = require('async');
 const passport = require('passport');
@@ -259,7 +266,9 @@ const server = http.Server(app);
 const io = socket(server);
 const hbs = handlebars.create();
 const community = new SteamCommunity();
-const sessionStore = new MongoStore({ mongooseConnection: mongoose.connection });
+const sessionStore = new MongoStore({
+  mongooseConnection: mongoose.connection
+});
 ```
 
 Obviously we're going to be using many modules here. The uses of each new one
@@ -275,31 +284,43 @@ mongoose.connect('mongodb://127.0.0.1:27017/guide');
 priceUpdater(6 * 60 * 60 * 1000);
 
 passport.serializeUser((user, done) => {
-	User.update({
-		steamid: user.id
-	}, {
-		$set: user._json
-	}, { upsert: true }, (err) => {
-		done(err, user._json);
-	});
+  User.update(
+    {
+      steamid: user.id
+    },
+    {
+      $set: user._json
+    },
+    { upsert: true },
+    err => {
+      done(err, user._json);
+    }
+  );
 });
 
 passport.deserializeUser((obj, done) => {
-	User.findOne({
-		steamid: obj.steamid
-	}, (err, user) => {
-		done(err, user);
-	});
+  User.findOne(
+    {
+      steamid: obj.steamid
+    },
+    (err, user) => {
+      done(err, user);
+    }
+  );
 });
 
-passport.use(new SteamStrategy({
-		returnURL: 'http://localhost:3037/auth/steam/return',
-		realm: 'http://localhost:3037/',
-		apiKey: 'your Steam API key'
-	}, (identifier, profile, done) => {
-		return done(null, profile);
-	}
-));
+passport.use(
+  new SteamStrategy(
+    {
+      returnURL: 'http://localhost:3037/auth/steam/return',
+      realm: 'http://localhost:3037/',
+      apiKey: 'your Steam API key'
+    },
+    (identifier, profile, done) => {
+      return done(null, profile);
+    }
+  )
+);
 ```
 
 The Passport configuration should look pretty familiar – it has hardly changed
@@ -313,25 +334,27 @@ Next we should configure our Socket.io server. This might look a little new:
 ```js
 // app.js (cont.)
 
-io.use(passportSocket.authorize({
-	cookieParser: cookieParser,
-	key: 'U_SESSION',
-	secret: 'some secret string',
-	store: sessionStore
-}));
+io.use(
+  passportSocket.authorize({
+    cookieParser: cookieParser,
+    key: 'U_SESSION',
+    secret: 'some secret string',
+    store: sessionStore
+  })
+);
 
-io.on('connection', (socket) => {
-	socket.on('deposit', (data) => {
-		const user = socket.request.user;
-		console.log(`${user.personaname} is depositting ${data.assetid}`);
-		// we'll send the trade offer here
-	});
+io.on('connection', socket => {
+  socket.on('deposit', data => {
+    const user = socket.request.user;
+    console.log(`${user.personaname} is depositting ${data.assetid}`);
+    // we'll send the trade offer here
+  });
 
-	socket.on('withdraw', (data) => {
-		const user = socket.request.user;
-		console.log(`${user.personaname} is withdrawing ${data.assetid}`);
-		// we'll send the trade offer here
-	});
+  socket.on('withdraw', data => {
+    const user = socket.request.user;
+    console.log(`${user.personaname} is withdrawing ${data.assetid}`);
+    // we'll send the trade offer here
+  });
 });
 ```
 
@@ -357,13 +380,15 @@ app.engine('hbs', hbs.engine);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.use(session({
+app.use(
+  session({
     secret: 'some secret string',
     name: 'U_SESSION',
     resave: true,
     saveUninitialized: true,
-	store: sessionStore
-}));
+    store: sessionStore
+  })
+);
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -382,92 +407,121 @@ overwhelming at first, but you should be able to grasp it.
 // app.js (cont.)
 
 app.get('/', (req, res) => {
-	res.render('main', {
-		user: req.user
-	});
+  res.render('main', {
+    user: req.user
+  });
 });
 
 app.get('/deposit', (req, res) => {
-	if (req.user) {
-		Inventory.findOne({
-			steamid: req.user.steamid
-		}, (err, inv) => {
-			if (inv && (Date.now() - inv.updated) > 30 * 60 * 1000) {
-				res.render('deposit', {
-					user: req.user,
-					items: inv.items
-				});
-			} else {
-				community.getUserInventoryContents(req.user.steamid, 730, 2, true, (err, inv) => {
-					if (err) {
-						console.log(err);
-					} else {
-						async.map(inv, (item, done) => {
-							Price.findOne({
-								market_hash_name: item.market_hash_name
-							}, (err, doc) => {
-								item.price = doc ? doc.price : '?';
-								done(null, item);
-							});
-						}, (err, results) => {
-							Inventory.update({
-								steamid: req.user.steamid
-							}, {
-								$set: {
-									updated: Date.now(),
-									items: results
-								}
-							}, (err) => {
-								if (err) {
-									console.log(err);
-								}
-							});
+  if (req.user) {
+    Inventory.findOne(
+      {
+        steamid: req.user.steamid
+      },
+      (err, inv) => {
+        if (inv && Date.now() - inv.updated > 30 * 60 * 1000) {
+          res.render('deposit', {
+            user: req.user,
+            items: inv.items
+          });
+        } else {
+          community.getUserInventoryContents(
+            req.user.steamid,
+            730,
+            2,
+            true,
+            (err, inv) => {
+              if (err) {
+                console.log(err);
+              } else {
+                async.map(
+                  inv,
+                  (item, done) => {
+                    Price.findOne(
+                      {
+                        market_hash_name: item.market_hash_name
+                      },
+                      (err, doc) => {
+                        item.price = doc ? doc.price : '?';
+                        done(null, item);
+                      }
+                    );
+                  },
+                  (err, results) => {
+                    Inventory.update(
+                      {
+                        steamid: req.user.steamid
+                      },
+                      {
+                        $set: {
+                          updated: Date.now(),
+                          items: results
+                        }
+                      },
+                      err => {
+                        if (err) {
+                          console.log(err);
+                        }
+                      }
+                    );
 
-							res.render('deposit', {
-								user: req.user,
-								items: results
-							});
-						});
-					}
-				});
-			}
-		});
-	} else {
-		res.redirect('/auth/steam');
-	}
+                    res.render('deposit', {
+                      user: req.user,
+                      items: results
+                    });
+                  }
+                );
+              }
+            }
+          );
+        }
+      }
+    );
+  } else {
+    res.redirect('/auth/steam');
+  }
 });
 
 app.get('/withdraw', (req, res) => {
-	if (req.user) {
-		Item.find({}, (err, inv) => {
-			async.map(inv, (item, done) => {
-				Price.findOne({
-					market_hash_name: item.name
-				}, (err, doc) => {
-					item.price = doc ? doc.price : '?';
-					done(null, item.toObject());
-				});
-			}, (err, results) => {
-				res.render('withdraw', {
-					user: req.user,
-					items: results
-				});
-			});
-		});
-	} else {
-		res.redirect('/auth/steam');
-	}
+  if (req.user) {
+    Item.find({}, (err, inv) => {
+      async.map(
+        inv,
+        (item, done) => {
+          Price.findOne(
+            {
+              market_hash_name: item.name
+            },
+            (err, doc) => {
+              item.price = doc ? doc.price : '?';
+              done(null, item.toObject());
+            }
+          );
+        },
+        (err, results) => {
+          res.render('withdraw', {
+            user: req.user,
+            items: results
+          });
+        }
+      );
+    });
+  } else {
+    res.redirect('/auth/steam');
+  }
 });
 
-app.get(/^\/auth\/steam(\/return)?$/,
-	passport.authenticate('steam', { failureRedirect: '/' }),
-	(req, res) => {
-		res.redirect('/');
-	});
+app.get(
+  /^\/auth\/steam(\/return)?$/,
+  passport.authenticate('steam', { failureRedirect: '/' }),
+  (req, res) => {
+    res.redirect('/');
+  }
+);
 
 app.get('/logout', (req, res) => {
-	req.logout();
-	res.redirect('/');
+  req.logout();
+  res.redirect('/');
 });
 
 server.listen(3037);

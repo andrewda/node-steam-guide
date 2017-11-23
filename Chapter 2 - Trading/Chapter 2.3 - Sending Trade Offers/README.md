@@ -18,24 +18,24 @@ Let's start coding. First we'll create a new function.
 
 ```js
 function sendRandomItem() {
-	manager.loadInventory(440, 2, true, (err, inventory) => {
-		if (err) {
-			console.log(err);
-		} else {
-			const offer = manager.createOffer('partner_steam_id');
-			const item = inventory[Math.floor(Math.random() * inventory.length - 1)];
+  manager.loadInventory(440, 2, true, (err, inventory) => {
+    if (err) {
+      console.log(err);
+    } else {
+      const offer = manager.createOffer('partner_steam_id');
+      const item = inventory[Math.floor(Math.random() * inventory.length - 1)];
 
-			offer.addMyItem(item);
-			offer.setMessage(`Lucky you! You get a ${item.name}!`);
-			offer.send((err, status) => {
-				if (err) {
-					console.log(err);
-				} else {
-					console.log(`Sent offer. Status: ${status}.`);
-				}
-			});
-		}
-	});
+      offer.addMyItem(item);
+      offer.setMessage(`Lucky you! You get a ${item.name}!`);
+      offer.send((err, status) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log(`Sent offer. Status: ${status}.`);
+        }
+      });
+    }
+  });
 }
 ```
 
@@ -82,38 +82,47 @@ future – this is a proof-of-concept.
 
 ```js
 function sendRandomItem() {
-	const partner = 'partner_steam_id';
-	const appid = 440;
-	const contextid = 2;
+  const partner = 'partner_steam_id';
+  const appid = 440;
+  const contextid = 2;
 
-	const offer = manager.createOffer(partner);
+  const offer = manager.createOffer(partner);
 
-	manager.loadInventory(appid, contextid, true, (err, myInv) => {
-		if (err) {
-			console.log(err);
-		} else {
-			const myItem = myInv[Math.floor(Math.random() * myInv.length - 1)];
-			offer.addMyItem(myItem);
+  manager.loadInventory(appid, contextid, true, (err, myInv) => {
+    if (err) {
+      console.log(err);
+    } else {
+      const myItem = myInv[Math.floor(Math.random() * myInv.length - 1)];
+      offer.addMyItem(myItem);
 
-			manager.loadUserInventory(partner, appid, contextid, true, (err, theirInv) => {
-				if (err) {
-					console.log(err);
-				} else {
-					const theirItem = theirInv[Math.floor(Math.random() * theirInv.length - 1)];
-					offer.addTheirItem(theirItem);
+      manager.loadUserInventory(
+        partner,
+        appid,
+        contextid,
+        true,
+        (err, theirInv) => {
+          if (err) {
+            console.log(err);
+          } else {
+            const theirItem =
+              theirInv[Math.floor(Math.random() * theirInv.length - 1)];
+            offer.addTheirItem(theirItem);
 
-					offer.setMessage(`Will you trade your ${theirItem.name} for my ${myItem.name}?`);
-					offer.send((err, status) => {
-						if (err) {
-							console.log(err);
-						} else {
-							console.log(`Sent offer. Status: ${status}.`);
-						}
-					});
-				}
-			});
-		}
-	});
+            offer.setMessage(
+              `Will you trade your ${theirItem.name} for my ${myItem.name}?`
+            );
+            offer.send((err, status) => {
+              if (err) {
+                console.log(err);
+              } else {
+                console.log(`Sent offer. Status: ${status}.`);
+              }
+            });
+          }
+        }
+      );
+    }
+  });
 }
 ```
 
