@@ -19,16 +19,16 @@ This listener emits two parameters along with the event: the user's steamid,
 and the new relationship status. Here is a list of the relationships:
 
 ```
-    None = 0,
-	Blocked = 1,
-	PendingInvitee = 2,
-	RequestRecipient = 2, (alias of PendingInvitee)
-    Friend = 3,
-	RequestInitiator = 4,
-	PendingInviter = 4, (alias of RequestInitiator)
-	Ignored = 5,
-	IgnoredFriend = 6,
-	SuggestedFriend = 7
+None = 0,
+Blocked = 1,
+PendingInvitee = 2,
+RequestRecipient = 2, (alias of PendingInvitee)
+Friend = 3,
+RequestInitiator = 4,
+PendingInviter = 4, (alias of RequestInitiator)
+Ignored = 5,
+IgnoredFriend = 6,
+SuggestedFriend = 7
 ```
 
 Now we can easily check what our new relationship with a user is, and act upon
