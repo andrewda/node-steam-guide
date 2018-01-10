@@ -1,9 +1,5 @@
 # Friend Requests
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 In this chapter, we will learn about friend requests. In the `steam-user`
 module, there is an event which is emitted every time your relationship with
 another user is changed. This event is called `friendRelationship`, and we can

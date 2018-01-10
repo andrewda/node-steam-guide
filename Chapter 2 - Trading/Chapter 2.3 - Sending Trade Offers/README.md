@@ -1,9 +1,5 @@
 # Chapter 2.3 - Sending Trade Offers
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 Now that we know how to handle incoming trade offers, sending them shouldn't
 be too much more difficult. Let's add some more code to our `project2.js` so
 that it sends a specific user a random item from our inventory.

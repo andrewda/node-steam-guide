@@ -1,9 +1,5 @@
 # Chapter 4.3 - Templates
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 Ok – we got our basic web app done in the last section, which basically sends
 us a "Hello World!" message. Pretty good, but we want to show more information
 to our users than just a sentence. For this, we'll use a templating language

@@ -1,9 +1,5 @@
 # Chapter 1.5 - Errors
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 Errors are an inevitable part of programming. You will face them. And it will
 suck. I speak from experience – it really does suck to get errors after working
 day and night on some beautiful code. Luckily, though, we not only have the

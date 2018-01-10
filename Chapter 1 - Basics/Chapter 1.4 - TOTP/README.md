@@ -1,9 +1,5 @@
 # Chapter 1.4 - Steam TOTP
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 As you probably already know, Steam has made 2FA mandatory now. This can
 fortunately be automatized using the [`steam-totp`](https://github.com/DoctorMcKay/node-steam-totp)
 module. Again, this can be installed using `npm install steam-totp`.
