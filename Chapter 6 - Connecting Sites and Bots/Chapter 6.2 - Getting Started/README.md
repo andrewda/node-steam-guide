@@ -1,9 +1,5 @@
 # Chapter 6.2 - Getting Started
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 Our application is certainly going to need authentication, so we'll use our
 code from 
 [Chapter 5.2](../../Chapter%205%20-%20Advanced%20Web%20Development/Chapter%205.2%20-%20Authentication) 

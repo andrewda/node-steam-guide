@@ -1,9 +1,5 @@
 # Chapter 4.5 - WebSockets
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 We use WebSockets to easily communicate between the front-end of the website
 and the back-end. Let's say, for example, our user is on the website and has a
 list of items to choose from. When the user selects an item, we use WebSockets

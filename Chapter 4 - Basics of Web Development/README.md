@@ -1,9 +1,5 @@
 # Chapter 4 - Basics of Web Development
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 ## Table of Contents
 
 - [Chapter 4.1 - Prerequisites](./Chapter%204.1%20-%20Prerequisites)

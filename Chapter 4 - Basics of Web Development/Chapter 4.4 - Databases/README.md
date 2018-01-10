@@ -1,9 +1,5 @@
 # Chapter 4.4 - Databases
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 Now we know how to send data to a template. That's great and all, but our site
 is still completely static. Nothing will ever change unless we mess with the
 code. Obviously, it would be very impractical for us to have to change the code

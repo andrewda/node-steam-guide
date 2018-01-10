@@ -1,9 +1,5 @@
 # Chapter 2.4 - Accepting Donations
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WWKSZ8BufMHxCu7dPGG4np4x/andrewda/node-steam-guide.svg' />
-</a>
-
 Even if this part might not be vital for our bot, it is always useful to have
 something very simple which will accept all donations for us. To do this first
 we will need to identify what a donation fundamentally is: a donation is when
