@@ -126,7 +126,7 @@ app.get('/deposit', (req, res) => {
         steamid: req.user.steamid
       },
       (err, inv) => {
-        if (inv && Date.now() - inv.updated > 6 * 60 * 60 * 1000) {
+        if (inv && Date.now() - inv.updated < 6 * 60 * 60 * 1000) {
           res.render('deposit', {
             user: req.user,
             items: inv.items
