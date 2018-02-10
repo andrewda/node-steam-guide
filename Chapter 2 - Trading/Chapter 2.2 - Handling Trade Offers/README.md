@@ -92,6 +92,10 @@ To test this out, run the program using `node project2.js` and use the trusted
 account to send an offer to the bot. If you don't have a second account, use a
 friend's Steam ID as the trusted account, and have them send your bot an offer.
 
+**Note that your Bot needs to have at least a $5 purchase on Steam to be eligible
+to recieve trading offers, else the ```newOffer``` event will simply not fire.**
+
+
 Sure enough, when the trade gets sent, something like this should appear in
 your console:
 
