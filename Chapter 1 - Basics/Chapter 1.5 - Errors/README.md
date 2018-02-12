@@ -18,5 +18,7 @@ incorrectly. Try reinstalling it by typing `npm install THE_MODULE_NAME` again.
 
 This means you have likely specified an incorrect `accountName` or `password`.
 Try re-entering them and make sure they work when logging into the Steam
-client. 
-This error can also be caused by passing the `twoFactorCode` in the logOnOptions object, while your bot does not currently have Two Factor Authentication (2FA) enabled.
+client.
+
+This error can also be caused by passing in a `twoFactorCode` when your bot does
+not have 2FA enabled.
