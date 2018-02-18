@@ -58,7 +58,7 @@ future ones. It should be fairly self-explanitory.
 </html>
 ```
 
-Here, we take the `title` variable, which we renderer in Express to be `'Hey
+Here, we take the `title` variable, which we render in Express to be `'Hey
 There, World!'`. To use this `title` variable in Handlebars, we simply use
 `{{title}}`. Then we access our `message` and print it out on the screen as
 well. When we load up the page, we should be greeted with something like this:
