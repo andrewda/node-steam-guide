@@ -29,8 +29,8 @@ client.on('friendMessage', (steamid, message) => {
   if (message === "Hello") {
     client.chatMessage(steamid,"Hello There !");
   } else if (message === "Hey") {
-    client.chatMessage(steamid,"Hey There !")
+    client.chatMessage(steamid,"Hey There !");
   } else {
-    client.chatMessage(steamid,"I failed to understand you :/")
+    client.chatMessage(steamid,"I failed to understand you :/");
   }
 });
