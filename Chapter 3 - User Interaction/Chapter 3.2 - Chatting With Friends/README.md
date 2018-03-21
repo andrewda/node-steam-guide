@@ -1,8 +1,8 @@
 # Chatting With Friends
 
-So we have added friends, now let's talk to them ! The `steam-user` module
+So we have added friends, now let's talk to them! The `steam-user` module
 emits an event `friendMessage` whenever a friend messages us. We will use it
-as follows :
+as follows:
 
 ```js
 client.on('friendMessage', (steamid, message) => {
@@ -13,11 +13,11 @@ client.on('friendMessage', (steamid, message) => {
 This also emits two parameters along with the event: the user's `steamid`,
 and the message the user has sent us.
 
-Now let's reply to our friend when he sends us a message :
+Now let's reply to our friend when he sends us a message:
 
 ```js
 client.on('friendMessage', (steamid, message) => {
-  client.chatMessage(steamid,"Hello There !");
+  client.chatMessage(steamid, "Hello There!");
 });
 ```
 
@@ -25,39 +25,37 @@ Now we have added a listener for the `friendMessage` event. Also we now
 reply to any user who sends us a message, regardless of his message. We use the
 `.chatMessage` method we learnt about before to send the reply.
 
-Great ! Now the bot talks to us ! Now let's try to teach the bot some specific
+Great! Now the bot talks to us! Now let's try to teach the bot some specific
 replies or commands.
 
 ```js
 client.on('friendMessage', (steamid, message) => {
   if (message === "Hello") {
-    client.chatMessage(steamid,"Hello There !");
+    client.chatMessage(steamid, "Hello There!");
   }
 });
 ```
 
 Now we have added a `if` condition that checks if the reply is what we expect.
-The bot will now reply with a warm `Hello There !` whenever a user sends a
+The bot will now reply with a warm `Hello There!` whenever a user sends a
 message saying `Hello`. But the bot won't reply when the expected message
 not sent, so to deal with that we add a `else` condition.
 
 ```js
 client.on('friendMessage', (steamid, message) => {
   if (message === "Hello") {
-    client.chatMessage(steamid,"Hello There !");
+    client.chatMessage(steamid, "Hello There!");
   } else {
-    client.chatMessage(steamid,"I failed to understand you :/");
+    client.chatMessage(steamid, "I failed to understand you :/");
   }
 });
 ```
 
-Now the bot will be reply saying `I failed to understand you :/` whenever an
+Now the bot will be reply saying `I failed to understand you :/` whenever a
 user sends us an unexpected message. Now try adding some of your own `else if`
 conditions. A working example of this has been added to the final code.
 
 For the final working code, check out project4.js.
-
-This is it for this chapter! See ya in the next one!
 
 This chapter was written by [@DentFuse](https://github.com/DentFuse) for
 [andrewda/node-steam-guide](https://github.com/DentFuse/node-steam-guide/).
