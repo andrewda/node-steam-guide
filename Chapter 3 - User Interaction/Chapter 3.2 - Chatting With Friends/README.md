@@ -55,9 +55,10 @@ Now the bot will be reply saying `I failed to understand you :/` whenever an
 user sends us an unexpected message. Now try adding some of your own `else if`
 conditions. A working example of this has been added to the final code.
 
-For the final working code, check out project4.js.
+For the final working code, check out project4.js. Please do try adding an
+`else if` condition yourself before seeing the final code, practising on your 
+own self is better than copy-pasting.
 
-This is it for this chapter! See ya in the next one!
 
 This chapter was written by [@DentFuse](https://github.com/DentFuse) for
-[andrewda/node-steam-guide](https://github.com/DentFuse/node-steam-guide/).
+[Steam-Bot-Basics/node-steam-guide](https://github.com/Steam-Bot-Basics/node-steam-guide).
