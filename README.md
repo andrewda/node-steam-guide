@@ -74,6 +74,6 @@ a Pull Request.
 <!-- Badge URLs -->
 
 [codacy-img]: https://img.shields.io/codacy/grade/5822ba91cc994725932f71ee6b926400.svg?style=flat-square
-[codacy-url]: https://app.codacy.com/app/Steam-Bot-Basics/node-steam-guide_2
+[codacy-url]: https://app.codacy.com/app/Steam-Bot-Basics/node-steam-guide/dashboard
 [cc-img]:     https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-url]:     https://creativecommons.org/licenses/by/4.0/
