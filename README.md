@@ -1,8 +1,6 @@
 # Andrew's Guide to Steam Bots
 
 [![Codacy][codacy-img]][codacy-url]
-[![PayPal][paypal-img]][paypal-url]
-[![Steam Donate][steam-img]][steam-url]
 
 [![Creative Commons][cc-img]][cc-url]
 
@@ -71,21 +69,11 @@ http://cs.money/.
 Please read the [contribution guidelines](/CONTRIBUTING.md) before creating
 a Pull Request.
 
-## Donating
 
-If you found this guide useful, there are a few ways for you to support me and
-keep this project going:
-
-- [Steam](https://steamcommunity.com/tradeoffer/new/?partner=132224795&token=HuEE9Mk1)
-- [Patreon](https://www.patreon.com/andrewda)
 
 <!-- Badge URLs -->
 
 [codacy-img]: https://img.shields.io/codacy/grade/5822ba91cc994725932f71ee6b926400.svg?style=flat-square
-[codacy-url]: https://www.codacy.com/app/andrewda/node-steam-guide
-[paypal-img]: https://img.shields.io/badge/donate-PayPal-blue.svg?style=flat-square
-[paypal-url]: https://www.paypal.me/andrewda/5
-[steam-img]:  https://img.shields.io/badge/donate-Steam-lightgrey.svg?style=flat-square
-[steam-url]:  https://steamcommunity.com/tradeoffer/new/?partner=132224795&token=HuEE9Mk1
+[codacy-url]: https://app.codacy.com/app/Steam-Bot-Basics/node-steam-guide_2
 [cc-img]:     https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-url]:     https://creativecommons.org/licenses/by/4.0/
