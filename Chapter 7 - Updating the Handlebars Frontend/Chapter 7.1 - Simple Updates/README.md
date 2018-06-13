@@ -42,4 +42,4 @@ First we'll edit `./views/main.hbs`...
 
 </html>
 ```
-We added `Font-Awesome` support & made use of it. Also, many `div` containers have been created, and `class` tags added.
+We added `Font-Awesome` support & made use of it. Also, many `div` containers have been created, and `class` tags added. The login message has been changed, and a Steam icon added to it. The "welcome" header now includes the user's avatar after their name. Their have been some style additions to the headers. A list container was added to the "Deposit", "Withdraw", and "Logout" buttons.
