@@ -1,4 +1,4 @@
-# Andrew's Guide to Steam Bots
+# [Steam-Bot-Basics](https://github.com/Steam-Bot-Basics)'s Guide to Steam Bots
 
 [![Codacy][codacy-img]][codacy-url]
 
@@ -37,7 +37,8 @@ A complete guide to building Steam bots using Node.js.
   	- [Chapter 6.1 - Prerequisites](./Chapter%206%20-%20Connecting%20Sites%20and%20Bots/Chapter%206.1%20-%20Prerequisites)
   	- [Chapter 6.2 - Getting Started](./Chapter%206%20-%20Connecting%20Sites%20and%20Bots/Chapter%206.2%20-%20Getting%20Started)
 	- [Chapter 6.3 - Beginning the Connection](./Chapter%206%20-%20Connecting%20Sites%20and%20Bots/Chapter%206.3%20-%20Beginning%20the%20Connection)
-
+- [Chapter 7 - Updating the Handlebars Frontend](./Chapter%207%20-%20Updating%20the%20Handlebars%20Frontend)
+	- [Chapter 7.1 - Simple Updates](./Chapter%207%20-%20Updating%20the%20Handlebars%20Frontend/Chapter%207.1%20-%20Simple%20Updates)
 
 *(more chapters to come)*
 
