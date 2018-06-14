@@ -4,6 +4,7 @@ The dependencies we need for this chapter:
 
 - [`passport.socketio`](https://www.npmjs.com/package/passport.socketio)
 - [`connect-mongo`](https://www.npmjs.com/package/connect-mongo)
+- [`cookie-parser`](https://www.npmjs.com/package/cookie-parser)
 - Install [`MongoDB`](https://docs.mongodb.com/manual/installation) CLI  
 
 [Continue Reading](../Chapter%206.2%20-%20Getting%20Started)
