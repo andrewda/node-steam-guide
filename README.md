@@ -1,4 +1,5 @@
-# [Steam-Bot-Basics](https://github.com/Steam-Bot-Basics)'s Guide to Steam Bots
+# Guide to Steam Bots
+### Forked from [andrewda/node-steam-guide](https://github.com/andrewda/node-steam-guide)
 
 [![Codacy][codacy-img]][codacy-url]
 
