@@ -22,11 +22,12 @@ templates using Handlebars. First let's create a couple new views: `deposit
 			<li class="deposit item" data-assetid="{{this.assetid}}">{{this.name}} (${{this.price}})</li>
 			{{/each}}
 		</ul>
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/main.js"></script>
 	</body>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="/socket.io/socket.io.js"></script>
-	<script src="/main.js"></script>
 </html>
 ```
 
@@ -45,11 +46,12 @@ templates using Handlebars. First let's create a couple new views: `deposit
 			<li class="withdraw item" data-assetid="{{this.assetid}}">{{this.name}} (${{this.price}})</li>
 			{{/each}}
 		</ul>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/main.js"></script>
 	</body>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="/socket.io/socket.io.js"></script>
-	<script src="/main.js"></script>
 </html>
 ```
 
@@ -75,11 +77,12 @@ Then we'll change our `main.hbs`:
 		{{else}}
 		<a href="/auth/steam">Click here to login</a>
 		{{/if}}
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/main.js"></script>
 	</body>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="/socket.io/socket.io.js"></script>
-	<script src="/main.js"></script>
 </html>
 ```
 

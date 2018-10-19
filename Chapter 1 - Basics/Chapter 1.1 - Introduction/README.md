@@ -1,13 +1,13 @@
 # Chapter 1.1 - Introduction
 
-Steam bots can be used for many things, ranging from chat bots to item exchange
-websites. Every Steam website you've ever used that takes items or sends you
-items uses some form of Steam bot, be it scrap.tf, csgojackpot.com, or so many
-more. Throughout this course, we'll learn how to create everything from chat
-bots to fully-functioning trade/exchange websites using a series of
-mini-projects.
+Steam bots can perform many functions:
+ - Accept donations,
+ - Chat with individuals or in group chats,
+ - Send, accept/decline, and confirm trades (automated).
+ 
+Websites like [Scrap.TF](https://scrap.tf), [CS.MONEY](https://cs.money), and [CSG0.Trade](https://csg0.trade) all use some sort of steam bot.
 
-Without further adieu, let's jump right into the basics of programming Steam
-bots in the next section.
+In this course, you will learn how to create everything from chat
+bots to fully-functioning trade websites.
 
 [Continue Reading](../Chapter%201.2%20-%20Prerequisites)

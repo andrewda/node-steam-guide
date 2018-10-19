@@ -1,8 +1,7 @@
-# Andrew's Guide to Steam Bots
+# Guide to Steam Bots
+### Forked from [andrewda/node-steam-guide](https://github.com/andrewda/node-steam-guide)
 
 [![Codacy][codacy-img]][codacy-url]
-[![PayPal][paypal-img]][paypal-url]
-[![Steam Donate][steam-img]][steam-url]
 
 [![Creative Commons][cc-img]][cc-url]
 
@@ -25,7 +24,7 @@ A complete guide to building Steam bots using Node.js.
   	- [Chapter 2.4 - Accepting Donations](./Chapter%202%20-%20Trading/Chapter%202.4%20-%20Accepting%20Donations)
 - [Chapter 3 - User Interaction](./Chapter%203%20-%20User%20Interaction)
   	- [Chapter 3.1 - Friend Requests](./Chapter%203%20-%20User%20Interaction/Chapter%203.1%20-%20Friend%20Requests)
-		- [Chapter 3.2 - Chatting With Friends](./Chapter%203%20-%20User%20Interaction/Chapter%203.2%20-%20Chatting%20With%20Friends)
+	- [Chapter 3.2 - Chatting With Friends](./Chapter%203%20-%20User%20Interaction/Chapter%203.2%20-%20Chatting%20With%20Friends)
 - [Chapter 4 - Basics of Web Development](./Chapter%204%20-%20Basics%20of%20Web%20Development)
   	- [Chapter 4.1 - Prerequisites](./Chapter%204%20-%20Basics%20of%20Web%20Development/Chapter%204.1%20-%20Prerequisites)
   	- [Chapter 4.2 - Base App](./Chapter%204%20-%20Basics%20of%20Web%20Development/Chapter%204.2%20-%20Base%20App)
@@ -39,7 +38,8 @@ A complete guide to building Steam bots using Node.js.
   	- [Chapter 6.1 - Prerequisites](./Chapter%206%20-%20Connecting%20Sites%20and%20Bots/Chapter%206.1%20-%20Prerequisites)
   	- [Chapter 6.2 - Getting Started](./Chapter%206%20-%20Connecting%20Sites%20and%20Bots/Chapter%206.2%20-%20Getting%20Started)
 	- [Chapter 6.3 - Beginning the Connection](./Chapter%206%20-%20Connecting%20Sites%20and%20Bots/Chapter%206.3%20-%20Beginning%20the%20Connection)
-
+- [Chapter 7 - Updating the Handlebars Frontend](./Chapter%207%20-%20Updating%20the%20Handlebars%20Frontend)
+	- [Chapter 7.1 - Simple Updates](./Chapter%207%20-%20Updating%20the%20Handlebars%20Frontend/Chapter%207.1%20-%20Simple%20Updates)
 
 *(more chapters to come)*
 
@@ -71,21 +71,11 @@ http://cs.money/.
 Please read the [contribution guidelines](/CONTRIBUTING.md) before creating
 a Pull Request.
 
-## Donating
 
-If you found this guide useful, there are a few ways for you to support me and
-keep this project going:
-
-- [Steam](https://steamcommunity.com/tradeoffer/new/?partner=132224795&token=HuEE9Mk1)
-- [Patreon](https://www.patreon.com/andrewda)
 
 <!-- Badge URLs -->
 
 [codacy-img]: https://img.shields.io/codacy/grade/5822ba91cc994725932f71ee6b926400.svg?style=flat-square
-[codacy-url]: https://www.codacy.com/app/andrewda/node-steam-guide
-[paypal-img]: https://img.shields.io/badge/donate-PayPal-blue.svg?style=flat-square
-[paypal-url]: https://www.paypal.me/andrewda/5
-[steam-img]:  https://img.shields.io/badge/donate-Steam-lightgrey.svg?style=flat-square
-[steam-url]:  https://steamcommunity.com/tradeoffer/new/?partner=132224795&token=HuEE9Mk1
+[codacy-url]: https://app.codacy.com/app/Steam-Bot-Basics/node-steam-guide/dashboard
 [cc-img]:     https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-url]:     https://creativecommons.org/licenses/by/4.0/
