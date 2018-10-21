@@ -4,6 +4,7 @@
 
 - [Chapter 3.1 - Friend Requests](./Chapter%203.1%20-%20Friend%20Requests)
 - [Chapter 3.2 - Chatting With Friends](./Chapter%203.2%20-%20Chatting%20With%20Friends)
+- [Chapter 3.3 - Sending Friend Invites](./Chapter%203.3%20-%20Sending%20Group%20Invites)
 
 ## Summary
 
