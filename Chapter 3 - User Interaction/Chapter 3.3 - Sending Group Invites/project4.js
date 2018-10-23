@@ -33,6 +33,8 @@ client.on('friendMessage', (steamid, message) => {
   } else if (message === "!group") {
     client.chatMessage(steamid,"Sending you a Group Invite!");
     client.inviteToGroup(steamid, config.groupID);
+    // OR
+    community.inviteUserToGroup(steamid, config.groupID);
   } else {
     client.chatMessage(steamid,"I failed to understand you :/")
   }
