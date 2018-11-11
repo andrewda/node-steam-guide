@@ -35,6 +35,12 @@ client.on('friendMessage', (steamid, message) => {
     client.inviteToGroup(steamid, config.groupID);
     // OR
     community.inviteUserToGroup(steamid, config.groupID);
+  } else if (message === "!comment") {
+    client.chatMessage(steamid,"Commenting on your profile!");
+    community.postUserComment(steamid, "My comment");
+  } else if (message === "!remove") {
+    client.chatMessage(steamid,"See you again later...")
+    client.removeFriend(steamid)
   } else {
     client.chatMessage(steamid,"I failed to understand you :/")
   }
