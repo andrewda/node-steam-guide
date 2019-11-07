@@ -5,7 +5,7 @@ prerequisites installed:
 
 - [Node.js and NPM](https://nodejs.org/en/)
 - [`steam-user`](https://www.npmjs.com/package/steam-user) (`npm install
-	steam-user`) - Module that allows communication with the steam servers via the Steam Client Protocol
+	steam-user`) - module which helps facilitate communications with Steam servers
 - [`steam-totp`](https://www.npmjs.com/package/steam-totp) (`npm install steam-totp`) - module for generating Steam Guard codes  
   - [View Chapter 1.4](../Chapter%201.4%20-%20TOTP#chapter-14) if your bot requires generating Steam Guard codes  
 
