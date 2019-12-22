@@ -22,7 +22,7 @@ class SteamBot {
     this.client.on('loggedOn', () => {
       console.log('Logged into Steam');
 
-      this.client.setPersona(SteamUser.Steam.EPersonaState.Online);
+      this.client.setPersona(SteamUser.EPersonaState.Online);
       this.client.gamesPlayed(730);
     });
 

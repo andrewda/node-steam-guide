@@ -108,7 +108,7 @@ its status to online and start playing some good ol' Team Fortress 2.
 client.on('loggedOn', () => {
   console.log('Logged into Steam');
 
-  client.setPersona(SteamUser.Steam.EPersonaState.Online);
+  client.setPersona(SteamUser.EPersonaState.Online);
   client.gamesPlayed(440);
 });
 ```
@@ -124,7 +124,7 @@ and the second being a persona name. The persona name is not required, but can
 be set if you would like to change your Steam name. For example, we could use:
 
 ```js
-client.setPersona(SteamUser.Steam.EPersonaState.Online, 'andrewda');
+client.setPersona(SteamUser.EPersonaState.Online, 'andrewda');
 ```
 
 to change our Steam name to "andrewda". The `gamesPlayed` method takes one
