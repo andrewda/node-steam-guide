@@ -2,5 +2,6 @@
 	"username": "",
 	"password": "",
 	"sharedSecret": "",
-	"idSecret": ""
+	"identitySecret": "",
+    "apiKey": ""
 }
